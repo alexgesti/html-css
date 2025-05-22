@@ -2,29 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Html&CssWithFlex</title>
-    <link rel="reset" href="reset.css" />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
 </head>
-
+<!-- a(ancor) para links y que se usa para list items y button para hacer una accion-->
 <body>
-    <header>
+    <header> <!-- Encabezado -->
         <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/logo-bookmark.svg?raw=true" class="img-logo">
         <nav>
-            <ul class="ul-header">
+            <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/icon-hamburger.svg?raw=true" class="img-hamburger"> <!-- Temporal. Sujeto a cambios -->
+            <ul class="ul-header"> <!-- Temporal. Sujeto a cambios -->
                 <li>
-                <p>a</p>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
+    <main> <!-- Contenido principal -->
+        <section> <!-- "Parte 1" -->
             <div>
-
+                <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/illustration-hero.svg?raw=true">
+                <div></div> <!-- Fondo azul, hecho con flex. -->
+            </div>
+            <h1>A simple Bookmark Manager</h1>
+            <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+            <div>  <!-- "Botones" para obtenerlo en chrome o firefox. --> 
+                <a>Get it on Chrome</a>
+                <a>Get it on Firefox</a>
             </div>
         </section>
+        <section> <!-- "Parte 2" -->
+            <h2>Features</h2>
+            <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+            <div> <!-- "Botones" para ver las características. -->
+                <a>Simple Bookmarking</a>
+                <a>Speedy Searching</a>
+                <a>Easy Sharing</a>
+            </div>
+            <div>
+                <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/illustration-features-tab-1.svg?raw=true"> 
+                <div></div> <!-- Fondo azul, hecho con flex. -->
+            </div>  
+        </section>
+        <section> <!-- "Parte 3" -->
+            <h2>Bookmark in one click</h2>
+            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+        </section>
+        <section> <!-- "Parte 4" -->
+            <h2>Download the extension</h2>
+            <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+            <div> <!-- Contenedor de chorme, firefox y opera (para tener mayor control de las animaciones) -->
+                <div> <!-- Contenedor de chrome -->
+                    <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/logo-chrome.svg?raw=true">
+                    <h3>Add to Chrome</h3>
+                    <p>Minimum version 62</p>
+                    <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/bg-dots.svg?raw=true">
+                    <div> <!-- Representacion del boton. No final (preguntar sobre diferencias y idea de como hacerlo). -->
+                        <a>Add & Install Extension</a>
+                    </div>
+                </div>
+                <div> <!-- Contenedor de firefox -->
+                    <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/logo-firefox.svg?raw=true">
+                    <h3>Add to Firefox</h3>
+                    <p>Minimum version 55</p>
+                    <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/bg-dots.svg?raw=true">
+                    <div> <!-- Representacion del boton. No final (preguntar sobre diferencias y idea de como hacerlo). -->
+                        <a>Add & Install Extension</a>
+                    </div>
+                </div>
+                <div> <!-- Contenedor de opera -->
+                    <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/logo-opera.svg?raw=true">
+                    <h3>Add to Opera</h3>
+                    <p>Minimum version 46</p>
+                    <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/bg-dots.svg?raw=true">
+                    <div> <!-- Representacion del boton. No final (preguntar sobre diferencias y idea de como hacerlo). -->
+                        <a>Add & Install Extension</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section> <!-- "Parte 5" -->
+            <h2>Frequently Asked Question</h2>
+            <p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+            <div> <!-- Contenedor de preguntas -->
+                <div>
+                    <p>What is Bookmark?<p>
+                    <p>Something.</p> <!-- To do. -->
+                </div>
+                <div>
+                    <p>How can I request a new browser?</p>
+                    <p>Something.</p> <!-- To do. -->
+                </div>
+                <div>
+                    <p>Is there a mobile app?</p>
+                    <p>Something.</p> <!-- To do. -->
+                </div>
+                <div>
+                    <p>What about other Chromium browsers?</p>
+                    <p>Something.</p> <!-- To do. -->
+                </div>
+            </div>
+            <a>More info</a>
+        </section>
     </main>
-    <footer></footer>
+    <footer> <!-- Pie de pagina -->
+        <section> <!-- Contenedor 1 de "estar en contacto" -->
+            <h3>35.000+ ALREADY JOINED</h3>
+            <h2>Stay up-to-date with what we’re doing</h2>
+            <p>Enter your email address</p> <!-- To do. -->
+            <a>Contact Us</a>
+        </section> 
+        <section> <!-- Links -->
+
+        </section>
+    </footer>
 </body>
 </html>
