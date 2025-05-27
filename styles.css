@@ -4,6 +4,7 @@
     --headercolor: #242841;
     --normaltextcolor: #a3a4a8;
     --bluegeneral: #4D61D1;
+    --salmongeneral: #fdaf90;
 }
 
 /* General type of text*/
@@ -48,9 +49,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     width: 100%;
-    height: 100%;
     background-color: white;
 }
 
@@ -60,7 +59,6 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: nowrap;
     width: 80%;
     margin-top: 12%;
     margin-bottom: 20%;
@@ -68,12 +66,10 @@ header {
 
 .img-logo {
     width: 50%;
-    margin: auto 0;
 }
 
 .button-header {
     display: flex;
-    height: auto;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -81,7 +77,7 @@ header {
 
 .img-hamburger {
     height: 65%;
-    margin: auto auto;
+    margin: auto;
 }
 
 /* Parte 1 styles
@@ -91,20 +87,17 @@ header {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    margin: auto 0;
 }
 
 .div-illustration {
     display: flex;
     justify-content: center;
-    margin: auto 0;
     margin-bottom: 10%;
     position: relative;
 }
 
 .img-illustration {
     width: 95%;
-    margin: auto 0;
 }
 
 .figure{
@@ -123,9 +116,8 @@ header {
     flex-direction: row;
     justify-content: space-around;
     width: 85%;
-    height: auto;
     margin-top: 10%;
-    margin-bottom: 35%;
+    margin-bottom: 25%;
 }
 
 .button-chromep1 {
@@ -182,13 +174,13 @@ header {
 }
 
 /* Parte 2 styles
-    This is the first part of the page which contains the illustration and the "Bookmark Manager" text. */
+    This is the second part which contains the part of "features". */
 .section-part2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
-    margin: auto 0;
+    align-items: center;
+    margin-bottom: 25%;
 }
 
 .section-part2 .div-illustration{
@@ -198,7 +190,6 @@ header {
 
 .img-illustration2 {
     width: 80%;
-    margin: auto 0;
 }
 
 .section-part2 .figure {
@@ -211,15 +202,45 @@ header {
     border-bottom-left-radius: 0%;
 }
 
-.button-part2 {
+.div-buttons {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 120%;
-    height: 100%;
-    margin: auto 0;
+    align-items: center;
+    width: 80%;
+    margin-top: 10%;
 }
 
+.button-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4em;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px rgb(192, 192, 192);
+    cursor: pointer;
+
+    font-family: var(--fonttype); 
+    font-size: 4.25vw;
+    font-weight: 550;
+    color: rgb(132, 132, 132);
+    text-align: center;
+}
+
+.button-part2:first-child {
+    border-top: solid 0.5px rgb(192, 192, 192);
+}
+
+.button-part2:hover {
+    color: var(--salmongeneral);
+}
+
+/* Parte 3 styles
+    This is the third part which contains a link to download the extension. (Not included in the final project) */
+
+    
 /*@media (max-width: 768px) { /* Web format (NO hay que poner todo)
     
 }*/
