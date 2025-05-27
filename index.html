@@ -25,27 +25,29 @@
             <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
             <div class="div-button-part1">  <!-- "Botones" para obtenerlo en chrome o firefox. --> 
                 <button class="button-chromep1">Get it on Chrome</button>
-                <button class="button-operap1">Get it on Opera</button>
+                <button class="button-firefoxp1">Get it on Firefox</button>
             </div>
         </section>
-        <section> <!-- "Parte 2" -->
+        <section class="section-part2"> <!-- "Parte 2" -->
             <h2>Features</h2>
             <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
-            <div> <!-- "Botones" para ver las características. -->
-                <a>Simple Bookmarking</a>
-                <a>Speedy Searching</a>
-                <a>Easy Sharing</a>
+            <div> <!-- "Botones" para ver las características. el div de botones tiene que estar inicializado en el css sino no funciona. LLAMAR A LOS BOTONES CON CALLS DESDE UN JAVASCRIPT DOCUMENT, PERO NO PONERLO AQUI EL ONCLICK, QUE HAGALLAMADA DE EVENTOS EN EL JAVASCRIPT.--> 
+                <button class="button-part2">Simple Bookmarking</button>
+                <button class="button-part2">Speedy Searching</button>
+                <button class="button-part2">Easy Sharing</button>
             </div>
-            <div>
-                <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/illustration-features-tab-1.svg?raw=true" class="img-illutration2">
-                <div></div> <!-- Fondo azul, hecho con flex. -->
-            </div>  
+            <div> <!-- Contenedor de todas las características. -->
+                <div class="div-illustration">
+                    <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/illustration-features-tab-1.svg?raw=true" class="img-illustration2">
+                    <div class="figure"></div> <!-- Fondo azul, hecho con flex. -->
+                </div>  
+                <div>
+                    <h2>Bookmark in one click</h2>
+                    <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                </div>
+            </div>
         </section>
         <section> <!-- "Parte 3" -->
-            <h2>Bookmark in one click</h2>
-            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-        </section>
-        <section> <!-- "Parte 4" -->
             <h2>Download the extension</h2>
             <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
             <div> <!-- Contenedor de chorme, firefox y opera (para tener mayor control de las animaciones) -->

@@ -2,7 +2,7 @@
 :root {
     --fonttype: crique grotesque, sans-serif;
     --headercolor: #242841;
-    --normaltextcolor: #BFC0C5;
+    --normaltextcolor: #a3a4a8;
     --bluegeneral: #4D61D1;
 }
 
@@ -19,10 +19,22 @@ h1 {
     
 }
 
+h2 {
+    font-family: var(--fonttype);
+    font-weight: 600;
+    font-size: 5.5vw;
+    letter-spacing: 0.1vw;
+    line-height: 10vw;
+    color: var(--headercolor);
+    text-align: center;
+    margin: 2.5% 10%;
+    
+}
+
 p {
     font-family: var(--fonttype);
     font-weight: 500;
-    font-size: 4vw;
+    font-size: 3.5vw;
     letter-spacing: 0.15vw;
     line-height: 6vw;
     color: var(--normaltextcolor);
@@ -50,7 +62,7 @@ header {
     justify-content: space-between;
     flex-wrap: nowrap;
     width: 80%;
-    margin-top: 10%;
+    margin-top: 12%;
     margin-bottom: 20%;
 }
 
@@ -74,7 +86,7 @@ header {
 
 /* Parte 1 styles
     This is the first part of the page which contains the illustration and the "Bookmark Manager" text. */
-.section-part1 {
+    .section-part1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -106,11 +118,6 @@ header {
     position: absolute;
 }
 
-.img-illutration2 {
-    width: 10%;
-    margin: auto 0;
-}
-
 .div-button-part1 {
     display: flex;
     flex-direction: row;
@@ -123,32 +130,94 @@ header {
 
 .button-chromep1 {
     display: flex;
-    height: auto;
-    width: 40%;
-    background-color: var(--bluegeneral); /*Mas oscuro*/
+    align-items: center;
+    justify-content: center;
+    width: 42.5%;
+    height: 195%;
+    background-color: var(--bluegeneral);
     border: solid var(--bluegeneral);
     cursor: pointer;
 
-    font-family: var(--fonttype); /* Retocar */
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgb(220, 220, 220);
+
+    font-family: var(--fonttype); 
     font-weight: 550;
     font-size: 3.5vw;
-    letter-spacing: 0.15vw;
     color: white;
     text-align: center;
 }
 
-.button-chromep1:hover
+.button-chromep1:active
 {
-    /*background-color: white;*/
+    background-color: white;
+    color: var(--bluegeneral);
 }
 
-.button-operap1 {
-display: flex;
-    height: auto;
-    width: 40%;
+.button-firefoxp1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42.5%;
+    height: 195%;
     background-color: #F7F7F7;
-    border: #F7F7F7;
+    border: solid #F7F7F7;
     cursor: pointer;
+
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgb(220, 220, 220);
+
+    font-family: var(--fonttype); 
+    font-weight: 550;
+    font-size: 3.5vw;
+    color: rgb(132, 132, 132);
+    text-align: center;
+}
+
+.button-firefoxp1:active
+{
+    background-color: white;
+    border: solid rgb(132, 132, 132);
+    color: rgb(132, 132, 132);
+}
+
+/* Parte 2 styles
+    This is the first part of the page which contains the illustration and the "Bookmark Manager" text. */
+.section-part2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto 0;
+}
+
+.section-part2 .div-illustration{
+    margin-top: 20%;
+    margin-bottom: 15%;
+}
+
+.img-illustration2 {
+    width: 80%;
+    margin: auto 0;
+}
+
+.section-part2 .figure {
+    height: 100%;
+    width: 77.5%;
+    left: 0%;
+    right: 30%;
+    top: 17.5%;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 0%;
+}
+
+.button-part2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 120%;
+    height: 100%;
+    margin: auto 0;
 }
 
 /*@media (max-width: 768px) { /* Web format (NO hay que poner todo)
