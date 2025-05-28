@@ -8,39 +8,57 @@
 }
 
 /* General type of text*/
-h1 {
+h1, h2, h3 {
     font-family: var(--fonttype);
     font-weight: 600;
-    font-size: 7.5vw;
     letter-spacing: 0.1vw;
     line-height: 10vw;
     color: var(--headercolor);
     text-align: center;
+}
+
+h1 {
+    font-size: 7.5vw;
     margin: 5% 10%;
-    
 }
 
 h2 {
-    font-family: var(--fonttype);
-    font-weight: 600;
-    font-size: 5.5vw;
-    letter-spacing: 0.1vw;
-    line-height: 10vw;
-    color: var(--headercolor);
-    text-align: center;
+    font-size: 6.5vw;
     margin: 2.5% 10%;
-    
+}
+
+h3  {
+    font-size: 5.25vw;
 }
 
 p {
     font-family: var(--fonttype);
     font-weight: 500;
-    font-size: 3.5vw;
+    font-size: 3.75vw;
     letter-spacing: 0.15vw;
     line-height: 6vw;
     color: var(--normaltextcolor);
     text-align: center;
     margin: 0 10%;
+}
+
+/* Similar base */
+.button-chromep1, .button-part3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bluegeneral);
+    border: solid var(--bluegeneral);
+    cursor: pointer;
+
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgb(220, 220, 220);
+
+    font-family: var(--fonttype); 
+    font-weight: 550;
+    font-size: 3.5vw;
+    color: white;
+    text-align: center; 
 }
 
 /* Mobile format */
@@ -102,7 +120,7 @@ header {
 
 .figure{
     background-color: var(--bluegeneral);
-    width: 80%;
+    width: 70%;
     height: 75%;
     left: 30%;
     top: 30%;
@@ -121,23 +139,8 @@ header {
 }
 
 .button-chromep1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 42.5%;
     height: 195%;
-    background-color: var(--bluegeneral);
-    border: solid var(--bluegeneral);
-    cursor: pointer;
-
-    border-radius: 5px;
-    box-shadow: 0 1px 5px rgb(220, 220, 220);
-
-    font-family: var(--fonttype); 
-    font-weight: 550;
-    font-size: 3.5vw;
-    color: white;
-    text-align: center;
 }
 
 .button-chromep1:active
@@ -239,7 +242,47 @@ header {
 
 /* Parte 3 styles
     This is the third part which contains a link to download the extension. (Not included in the final project) */
+.section-part3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35%;
+}
 
+.contenedor-extension {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20% auto 0 auto;
+
+    width: 80%;
+    height: 100%;
+
+    border-radius: 5%;
+    box-shadow: 0 10px 20px rgb(220, 220, 220);
+}
+
+.img-extension {
+    width: 30%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.img-extesion-division {
+    width: 100%;
+    margin-top: 7.5%;
+    margin-bottom: 10%;
+}
+
+.button-part3 {
+    width: 80vw;
+    height: 7vh; 
+    max-width: 70%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
     
 /*@media (max-width: 768px) { /* Web format (NO hay que poner todo)
     
