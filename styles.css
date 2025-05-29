@@ -1,289 +1,416 @@
 /* Root */
 :root {
-    --fonttype: crique grotesque, sans-serif;
-    --headercolor: #242841;
-    --normaltextcolor: #a3a4a8;
-    --bluegeneral: #4D61D1;
-    --salmongeneral: #fdaf90;
+  --fonttype: crique grotesque, sans-serif;
+  --headercolor: #242841;
+  --normaltextcolor: #a3a4a8;
+  --bluegeneral: #4d61d1;
+  --salmongeneral: #fdaf90;
 }
 
 /* General type of text*/
-h1, h2, h3 {
-    font-family: var(--fonttype);
-    font-weight: 600;
-    letter-spacing: 0.1vw;
-    line-height: 10vw;
-    color: var(--headercolor);
-    text-align: center;
+h1,
+h2,
+h3 {
+  font-family: var(--fonttype);
+  font-weight: 600;
+  letter-spacing: 0.1vw;
+  line-height: 10vw;
+  color: var(--headercolor);
+  text-align: center;
 }
 
 h1 {
-    font-size: 7.5vw;
-    margin: 5% 10%;
+  font-size: 7.5vw;
+  margin: 5% 10%;
 }
 
 h2 {
-    font-size: 6.5vw;
-    margin: 2.5% 10%;
+  font-size: 6.5vw;
+  line-height: 8vw;
+  margin: 4.5% 10%;
 }
 
-h3  {
-    font-size: 5.25vw;
+h3 {
+  font-size: 5.25vw;
 }
 
 p {
-    font-family: var(--fonttype);
-    font-weight: 500;
-    font-size: 3.75vw;
-    letter-spacing: 0.15vw;
-    line-height: 6vw;
-    color: var(--normaltextcolor);
-    text-align: center;
-    margin: 0 10%;
+  font-family: var(--fonttype);
+  font-weight: 500;
+  font-size: 3.75vw;
+  letter-spacing: 0.15vw;
+  line-height: 6vw;
+  color: var(--normaltextcolor);
+  text-align: center;
+  margin: 0 10%;
 }
 
 /* Similar base */
-.button-chromep1, .button-part3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--bluegeneral);
-    border: solid var(--bluegeneral);
-    cursor: pointer;
+.button-chromep1,
+.button-part3,
+.button-part4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bluegeneral);
+  border: solid var(--bluegeneral);
+  cursor: pointer;
 
-    border-radius: 5px;
-    box-shadow: 0 1px 5px rgb(220, 220, 220);
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgb(220, 220, 220);
 
-    font-family: var(--fonttype); 
-    font-weight: 550;
-    font-size: 3.5vw;
-    color: white;
-    text-align: center; 
+  font-family: var(--fonttype);
+  font-weight: 550;
+  font-size: 3.5vw;
+  color: white;
+  text-align: center;
 }
 
 /* Mobile format */
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: white;
 }
 
 /* Header styles 
     This is the header of the page, which contains the logo and navigation menu. */
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 80%;
-    margin-top: 12%;
-    margin-bottom: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 12%;
+  margin-bottom: 20%;
 }
 
 .img-logo {
-    width: 50%;
+  width: 50%;
 }
 
 .button-header {
-    display: flex;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+  display: flex;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .img-hamburger {
-    height: 65%;
-    margin: auto;
+  height: 65%;
+  margin: auto;
 }
 
 /* Parte 1 styles
     This is the first part of the page which contains the illustration and the "Bookmark Manager" text. */
-    .section-part1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+.section-part1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .div-illustration {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10%;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+  position: relative;
 }
 
 .img-illustration {
-    width: 95%;
+  width: 95%;
 }
 
-.figure{
-    background-color: var(--bluegeneral);
-    width: 70%;
-    height: 75%;
-    left: 30%;
-    top: 30%;
-    border-bottom-left-radius: 30%;
-    z-index: -1;
-    position: absolute;
+.figure {
+  background-color: var(--bluegeneral);
+  width: 70%;
+  height: 75%;
+  left: 30%;
+  top: 30%;
+  border-bottom-left-radius: 30%;
+  z-index: -1;
+  position: absolute;
 }
 
 .div-button-part1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 85%;
-    margin-top: 10%;
-    margin-bottom: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 85%;
+  margin-top: 10%;
+  margin-bottom: 25%;
 }
 
 .button-chromep1 {
-    width: 42.5%;
-    height: 195%;
+  width: 42.5%;
+  height: 195%;
 }
 
-.button-chromep1:active
-{
-    background-color: white;
-    color: var(--bluegeneral);
+.button-chromep1:active {
+  background-color: white;
+  color: var(--bluegeneral);
 }
 
 .button-firefoxp1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 42.5%;
-    height: 195%;
-    background-color: #F7F7F7;
-    border: solid #F7F7F7;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42.5%;
+  height: 195%;
+  background-color: #f7f7f7;
+  border: solid #f7f7f7;
+  cursor: pointer;
 
-    border-radius: 5px;
-    box-shadow: 0 1px 5px rgb(220, 220, 220);
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgb(220, 220, 220);
 
-    font-family: var(--fonttype); 
-    font-weight: 550;
-    font-size: 3.5vw;
-    color: rgb(132, 132, 132);
-    text-align: center;
+  font-family: var(--fonttype);
+  font-weight: 550;
+  font-size: 3.5vw;
+  color: rgb(132, 132, 132);
+  text-align: center;
 }
 
-.button-firefoxp1:active
-{
-    background-color: white;
-    border: solid rgb(132, 132, 132);
-    color: rgb(132, 132, 132);
+.button-firefoxp1:active {
+  background-color: white;
+  border: solid rgb(132, 132, 132);
+  color: rgb(132, 132, 132);
 }
 
 /* Parte 2 styles
     This is the second part which contains the part of "features". */
 .section-part2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25%;
 }
 
-.section-part2 .div-illustration{
-    margin-top: 20%;
-    margin-bottom: 15%;
+.section-part2 .div-illustration {
+  margin-top: 20%;
+  margin-bottom: 15%;
 }
 
 .img-illustration2 {
-    width: 80%;
+  width: 80%;
 }
 
 .section-part2 .figure {
-    height: 100%;
-    width: 77.5%;
-    left: 0%;
-    right: 30%;
-    top: 17.5%;
-    border-bottom-right-radius: 30%;
-    border-bottom-left-radius: 0%;
+  height: 100%;
+  width: 77.5%;
+  left: 0%;
+  right: 30%;
+  top: 17.5%;
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 0%;
 }
 
 .div-buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 10%;
 }
 
 .button-part2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 4em;
-    background-color: transparent;
-    border: none;
-    border-bottom: solid 1px rgb(192, 192, 192);
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 4em;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px rgb(192, 192, 192);
+  cursor: pointer;
 
-    font-family: var(--fonttype); 
-    font-size: 4.25vw;
-    font-weight: 550;
-    color: rgb(132, 132, 132);
-    text-align: center;
+  font-family: var(--fonttype);
+  font-size: 4.25vw;
+  font-weight: 550;
+  color: rgb(132, 132, 132);
+  text-align: center;
 }
 
 .button-part2:first-child {
-    border-top: solid 0.5px rgb(192, 192, 192);
+  border-top: solid 0.5px rgb(192, 192, 192);
 }
 
 .button-part2:hover {
-    color: var(--salmongeneral);
+  color: var(--salmongeneral);
 }
 
 /* Parte 3 styles
     This is the third part which contains a link to download the extension. (Not included in the final project) */
 .section-part3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35%;
 }
 
 .contenedor-extension {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20% auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20% auto 0 auto;
 
-    width: 80%;
-    height: 100%;
+  width: 80%;
+  height: 100%;
 
-    border-radius: 5%;
-    box-shadow: 0 10px 20px rgb(220, 220, 220);
+  border-radius: 5%;
+  box-shadow: 0 10px 20px rgb(220, 220, 220);
 }
 
 .img-extension {
-    width: 30%;
-    margin-top: 10%;
-    margin-bottom: 5%;
+  width: 30%;
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 .img-extesion-division {
-    width: 100%;
-    margin-top: 7.5%;
-    margin-bottom: 10%;
+  width: 100%;
+  margin-top: 7.5%;
+  margin-bottom: 10%;
 }
 
 .button-part3 {
-    width: 80vw;
-    height: 7vh; 
-    max-width: 70%;
-    margin: 0 auto;
-    margin-bottom: 10%;
+  width: 80vw;
+  height: 7vh;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 10%;
 }
-    
+
+.button-part3:active {
+  background-color: white;
+  color: var(--bluegeneral);
+}
+
+/* Parte 4 styles
+    This is the forth part which contains FAQs about the app. */
+.section-part4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%; /*Por cambiar*/
+}
+
+.section-part4 > div {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 7.5%;
+}
+
+details summary::-webkit-details-marker,
+details summary::marker {
+  display: none;
+}
+
+details > summary {
+  list-style: none;
+}
+
+.details-part4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 10% 0;
+  padding-bottom: 7.5%;
+  border-bottom: solid 1px rgb(192, 192, 192);
+}
+
+.summary-part4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: var(--fonttype);
+  font-weight: 550;
+  font-size: 3.75vw;
+  color: rgb(62, 62, 62);
+  letter-spacing: 0.1vw;
+  text-align: left;
+  cursor: pointer;
+}
+
+.summary-part4::after {
+  /* Flecha que indica si el FAQ está abierto o cerrado */
+  content: "";
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url("https://github.com/alexgesti/1.1-HTML-i-CSS-amb-Flex/blob/main/Imagenes/icon-arrow.svg?raw=true");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s, filter 0.3s;
+  transform-origin: 50% 50%;
+}
+
+.details-part4[open] .summary-part4::after {
+  /* Cambia el color de la flecha al abrir */
+  transform: rotate(180deg);
+  filter: invert(27%) sepia(99%) saturate(2050%) hue-rotate(-15deg)
+    brightness(92.5%) contrast(90%);
+}
+
+.p-part4 {
+  font-family: var(--fonttype);
+  font-weight: 500;
+  font-size: 3.75vw;
+  letter-spacing: 0.1vw;
+  line-height: 7vw;
+  color: gray;
+  text-align: left;
+  margin: 7.5% 0;
+  padding: 0;
+}
+
+.button-part4 {
+  width: 30%;
+  height: 6vh;
+  margin-top: 10%;
+  margin-bottom: 20%;
+  letter-spacing: 0.1vw;
+}
+
+.button-part4:active {
+  background-color: white;
+  color: var(--bluegeneral);
+}
+
+/* Footer styles 
+    This is the footer/end of the page, where you can send your email adress to stay in contact, go quickly to one of the sections of the page or visit one of the social webs of the company. */
+.section-contact {
+  /* Contact section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--bluegeneral);
+}
+
+.section-links {
+  /* Links section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(39, 39, 76);
+}
+
 /*@media (max-width: 768px) { /* Web format (NO hay que poner todo)
     
 }*/

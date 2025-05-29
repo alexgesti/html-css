@@ -1,128 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Html&CssWithFlex</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
-</head>
-<!-- a(ancor) para links y que se usa para list items y button para hacer una accion-->
-<body>
-    <header> <!-- Encabezado -->
-        <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/logo-bookmark.svg?raw=true" class="img-logo">
-        <button class="button-header"> <!-- Boton de menu -->
-            <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/icon-hamburger.svg?raw=true" class="img-hamburger"> <!-- Temporal. Añadir acción -->
-        </button>
+  </head>
+  <!-- a(ancor) para links y que se usa para list items y button para hacer una accion-->
+  <body>
+    <header>
+      <!-- Encabezado -->
+      <img
+        src="https://github.com/alexgesti/html-css/blob/main/Imagenes/logo-bookmark.svg?raw=true"
+        class="img-logo"
+      />
+      <button class="button-header">
+        <!-- Boton de menu -->
+        <img
+          src="https://github.com/alexgesti/html-css/blob/main/Imagenes/icon-hamburger.svg?raw=true"
+          class="img-hamburger"
+        />
+        <!-- Temporal. Añadir acción -->
+      </button>
     </header>
-    <main> <!-- Contenido principal -->
-        <section class="section-part1"> <!-- "Parte 1" -->
-            <div class="div-illustration">
-                <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/illustration-hero.svg?raw=true" class="img-illustration">
-                <div  class="figure"></div> <!-- Fondo azul, hecho con flex. -->
-            </div>
-            <h1>A Simple Bookmark Manager</h1>
-            <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
-            <div class="div-button-part1">  <!-- "Botones" para obtenerlo en chrome o firefox. --> 
-                <button class="button-chromep1">Get it on Chrome</button>
-                <button class="button-firefoxp1">Get it on Firefox</button>
-            </div>
-        </section>
-        <section class="section-part2"> <!-- "Parte 2" -->
-            <h2>Features</h2>
-            <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
-            <div class="div-buttons"> <!-- "Botones" para ver las características. LLAMAR A LOS BOTONES CON CALLS DESDE UN JAVASCRIPT DOCUMENT, PERO NO PONERLO AQUI EL ONCLICK, QUE HAGALLAMADA DE EVENTOS EN EL JAVASCRIPT.--> 
-                <button class="button-part2">Simple Bookmarking</button>
-                <button class="button-part2">Speedy Searching</button>
-                <button class="button-part2">Easy Sharing</button>
-            </div>
-            <div> <!-- Contenedor de toda la info de las características. -->
-                <div class="div-illustration">
-                    <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/illustration-features-tab-1.svg?raw=true" class="img-illustration2">
-                    <div class="figure"></div> <!-- Fondo azul, hecho con flex. -->
-                </div>  
-                <div>
-                    <h2>Bookmark in one click</h2>
-                    <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-                </div>
-            </div>
-        </section>
-        <section class="section-part3"> <!-- "Parte 3" -->
-            <h2>Download the extension</h2>
-            <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
-            <div> <!-- Contenedor de chorme, firefox y opera (para tener mayor control de los espacios) -->
-                <div class="contenedor-extension"> <!-- Contenedor de chrome -->
-                    <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/logo-chrome.svg?raw=true" class="img-extension">
-                    <h3>Add to Chrome</h3>
-                    <p>Minimum version 62</p>
-                    <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/bg-dots.svg?raw=true" class="img-extesion-division">
-                    <div> <!-- Representacion del boton. No final (preguntar sobre diferencias y idea de como hacerlo). -->
-                        <button class="button-part3">Add & Install Extension</button>
-                    </div>
-                </div>
-                <div class="contenedor-extension"> <!-- Contenedor de firefox -->
-                    <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/logo-firefox.svg?raw=true" class="img-extension">
-                    <h3>Add to Firefox</h3>
-                    <p>Minimum version 55</p>
-                    <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/bg-dots.svg?raw=true" class="img-extesion-division">
-                    <div> <!-- Representacion del boton. No final (preguntar sobre diferencias y idea de como hacerlo). -->
-                        <button class="button-part3">Add & Install Extension</button>
-                    </div>
-                </div>
-                <div class="contenedor-extension"> <!-- Contenedor de opera -->
-                    <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/logo-opera.svg?raw=true" class="img-extension">
-                    <h3>Add to Opera</h3>
-                    <p>Minimum version 46</p>
-                    <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/bg-dots.svg?raw=true" class="img-extesion-division">
-                    <div> <!-- Representacion del boton. No final (preguntar sobre diferencias y idea de como hacerlo). -->
-                        <button class="button-part3">Add & Install Extension</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section> <!-- "Parte 4" -->
-            <h2>Frequently Asked Question</h2>
-            <p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
-            <div> <!-- Contenedor de preguntas -->
-                <div>
-                    <p>What is Bookmark?<p>
-                    <p>Something.</p> <!-- To do. -->
-                </div>
-                <div>
-                    <p>How can I request a new browser?</p>
-                    <p>Something.</p> <!-- To do. -->
-                </div>
-                <div>
-                    <p>Is there a mobile app?</p>
-                    <p>Something.</p> <!-- To do. -->
-                </div>
-                <div>
-                    <p>What about other Chromium browsers?</p>
-                    <p>Something.</p> <!-- To do. -->
-                </div>
-            </div>
-            <a>More info</a>
-        </section>
-    </main>
-    <footer> <!-- Pie de pagina -->
-        <section> <!-- Contenedor 1 de "estar en contacto" -->
-            <h3>35.000+ ALREADY JOINED</h3>
-            <h2>Stay up-to-date with what we’re doing</h2>
-            <p>Enter your email address</p> <!-- To do. -->
-            <a>Contact Us</a>
-        </section> 
-        <section> <!-- Links -->
-            <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/logo-bookmark.svg?raw=true">
+    <main>
+      <!-- Contenido principal -->
+      <section class="section-part1">
+        <!-- "Parte 1" -->
+        <div class="div-illustration">
+          <img
+            src="https://github.com/alexgesti/html-css/blob/main/Imagenes/illustration-hero.svg?raw=true"
+            class="img-illustration"
+          />
+          <div class="figure"></div>
+          <!-- Fondo azul, hecho con flex. -->
+        </div>
+        <h1>A Simple Bookmark Manager</h1>
+        <p>
+          A clean and simple interface to organize your favourite websites. Open
+          a new browser tab and see your sites load instantly. Try it for free.
+        </p>
+        <div class="div-button-part1">
+          <!-- "Botones" para obtenerlo en chrome o firefox. -->
+          <button class="button-chromep1">Get it on Chrome</button>
+          <button class="button-firefoxp1">Get it on Firefox</button>
+        </div>
+      </section>
+      <section class="section-part2">
+        <!-- "Parte 2" -->
+        <h2>Features</h2>
+        <p>
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+        <div class="div-buttons">
+          <!-- "Botones" para ver las características. LLAMAR A LOS BOTONES CON CALLS DESDE UN JAVASCRIPT DOCUMENT, PERO NO PONERLO AQUI EL ONCLICK, QUE HAGALLAMADA DE EVENTOS EN EL JAVASCRIPT.-->
+          <button class="button-part2">Simple Bookmarking</button>
+          <button class="button-part2">Speedy Searching</button>
+          <button class="button-part2">Easy Sharing</button>
+        </div>
+        <div>
+          <!-- Contenedor de toda la info de las características. -->
+          <div class="div-illustration">
+            <img
+              src="https://github.com/alexgesti/html-css/blob/main/Imagenes/illustration-features-tab-1.svg?raw=true"
+              class="img-illustration2"
+            />
+            <div class="figure"></div>
+            <!-- Fondo azul, hecho con flex. -->
+          </div>
+          <div>
+            <h2>Bookmark in one click</h2>
+            <p>
+              Organize your bookmarks however you like. Our simple drag-and-drop
+              interface gives you complete control over how you manage your
+              favourite sites.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-part3">
+        <!-- "Parte 3" -->
+        <h2>Download the extension</h2>
+        <p>
+          We’ve got more browsers in the pipeline. Please do let us know if
+          you’ve got a favourite you’d like us to prioritize.
+        </p>
+        <div>
+          <!-- Contenedor de chorme, firefox y opera (para tener mayor control de los espacios) -->
+          <div class="contenedor-extension">
+            <!-- Contenedor de chrome -->
+            <img
+              src="https://github.com/alexgesti/html-css/blob/main/Imagenes/logo-chrome.svg?raw=true"
+              class="img-extension"
+            />
+            <h3>Add to Chrome</h3>
+            <p>Minimum version 62</p>
+            <img
+              src="https://github.com/alexgesti/html-css/blob/main/Imagenes/bg-dots.svg?raw=true"
+              class="img-extesion-division"
+            />
             <div>
-                <a>FEATURES</a>
-                <a>PRICING</a>
-                <a>CONTACT</a>
+              <!--  Boton de extension (Chrome)  -->
+              <button class="button-part3">Add & Install Extension</button>
             </div>
-            <div> <!-- Redes sociales -->
-                <a> <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/icon-facebook.svg?raw=true"> </a> <!-- Deberian ser links -->
-                <a> <img src="https://github.com/alexgesti/html-css/blob/main/Imagenes/icon-twitter.svg?raw=true"> </a>
+          </div>
+          <div class="contenedor-extension">
+            <!-- Contenedor de firefox -->
+            <img
+              src="https://github.com/alexgesti/html-css/blob/main/Imagenes/logo-firefox.svg?raw=true"
+              class="img-extension"
+            />
+            <h3>Add to Firefox</h3>
+            <p>Minimum version 55</p>
+            <img
+              src="https://github.com/alexgesti/html-css/blob/main/Imagenes/bg-dots.svg?raw=true"
+              class="img-extesion-division"
+            />
+            <div>
+              <!-- Boton de extension (Firefox) -->
+              <button class="button-part3">Add & Install Extension</button>
             </div>
-        </section>
+          </div>
+          <div class="contenedor-extension">
+            <!-- Contenedor de opera -->
+            <img
+              src="https://github.com/alexgesti/html-css/blob/main/Imagenes/logo-opera.svg?raw=true"
+              class="img-extension"
+            />
+            <h3>Add to Opera</h3>
+            <p>Minimum version 46</p>
+            <img
+              src="https://github.com/alexgesti/html-css/blob/main/Imagenes/bg-dots.svg?raw=true"
+              class="img-extesion-division"
+            />
+            <div>
+              <!-- Boton de extension (Opera) -->
+              <button class="button-part3">Add & Install Extension</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-part4">
+        <!-- "Parte 4" -->
+        <h2>Frequently Asked Question</h2>
+        <p>
+          Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to email us.
+        </p>
+        <div>
+          <!-- Contenedor de preguntas -->
+          <details class="details-part4">
+            <summary class="summary-part4">What is Bookmark?</summary>
+            <p class="p-part4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </details>
+          <details class="details-part4">
+            <summary class="summary-part4">
+              How can I request a new browser?
+            </summary>
+            <p class="p-part4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </details>
+          <details class="details-part4">
+            <summary class="summary-part4">Is there a mobile app?</summary>
+            <p class="p-part4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </details>
+          <details class="details-part4">
+            <summary class="summary-part4">
+              What about other Chromium browsers?
+            </summary>
+            <p class="p-part4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </details>
+        </div>
+        <button class="button-part4">More info</button>
+      </section>
+    </main>
+    <footer>
+      <!-- Pie de pagina -->
+      <section class="section-contact">
+        <!-- Contenedor 1 de "estar en contacto" -->
+        <h3>35.000+ ALREADY JOINED</h3>
+        <h2>Stay up-to-date with what we’re doing</h2>
+        <p>Enter your email address</p>
+        <!-- To do. -->
+        <a>Contact Us</a>
+      </section>
+      <section class="section-links">
+        <!-- Links -->
+        <img
+          src="https://github.com/alexgesti/html-css/blob/main/Imagenes/logo-bookmark.svg?raw=true"
+        />
+        <div>
+          <a>FEATURES</a>
+          <a>PRICING</a>
+          <a>CONTACT</a>
+        </div>
+        <div>
+          <!-- Redes sociales -->
+          <a>
+            <img
+              src="https://github.com/alexgesti/html-css/blob/main/Imagenes/icon-facebook.svg?raw=true"
+            />
+          </a>
+          <!-- Deberian ser links -->
+          <a>
+            <img
+              src="https://github.com/alexgesti/html-css/blob/main/Imagenes/icon-twitter.svg?raw=true"
+            />
+          </a>
+        </div>
+      </section>
     </footer>
-</body>
+  </body>
 </html>
