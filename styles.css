@@ -48,7 +48,8 @@ p {
 /* Similar base */
 .button-chromep1,
 .button-part3,
-.button-part4 {
+.button-part4,
+.button-contact {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -280,8 +281,8 @@ header {
 }
 
 .button-part3 {
-  width: 80vw;
-  height: 7vh;
+  width: 18rem;
+  height: 2.5rem;
   max-width: 70%;
   margin: 0 auto;
   margin-bottom: 10%;
@@ -378,7 +379,7 @@ details > summary {
 
 .button-part4 {
   width: 30%;
-  height: 6vh;
+  height: 5vh;
   margin-top: 10%;
   margin-bottom: 20%;
   letter-spacing: 0.1vw;
@@ -401,6 +402,74 @@ details > summary {
   background-color: var(--bluegeneral);
 }
 
+.h3-footer {
+  font-weight: 550;
+  font-size: 3.5vw;
+  letter-spacing: 1vw;
+  color: white;
+  margin-top: 15%;
+}
+
+.h2-footer {
+  width: 100%;
+  letter-spacing: 0.2vw;
+  color: white;
+  margin-top: 0%;
+  margin-bottom: 7.5%;
+}
+
+.div-email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.input-email-footer {
+  width: 85%;
+  height: 4vh;
+  border-radius: 7.5px;
+
+  font-family: var(--fonttype);
+  font-size: 4vw;
+  padding-left: 1em;
+}
+
+.email-error {
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: rgb(255, 101, 83);
+
+  font-family: var(--fonttype);
+  font-style: italic;
+  font-size: 3.5vw;
+  letter-spacing: 0.1vw;
+}
+
+.button-contact {
+  width: 90%;
+  height: 5vh;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  background-color: rgb(255, 101, 83);
+  border: solid rgb(255, 101, 83);
+
+  border-radius: 7.5px;
+  box-shadow: none;
+
+  font-weight: 550;
+  font-size: 4vw;
+  letter-spacing: 0.25vw;
+}
+
+.button-contact:active {
+  background-color: white;
+  color: rgb(255, 101, 83);
+}
+
 .section-links {
   /* Links section */
   display: flex;
@@ -409,6 +478,78 @@ details > summary {
   align-items: center;
   width: 100%;
   background-color: rgb(39, 39, 76);
+}
+
+.img-logofooter {
+  width: 40%;
+  margin-top: 10%;
+}
+
+.div-button-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0;
+}
+
+.button-footer {
+  display: flex;
+  width: fit-content;
+  background: none;
+  border: none;
+
+  font-family: var(--fonttype);
+  font-weight: 500;
+  font-size: 3.75vw;
+  letter-spacing: 0.5vw;
+  color: white;
+  cursor: pointer;
+
+  margin: 15% 0;
+}
+
+.button-footer:active {
+  color: var(--salmongeneral);
+  outline: none;
+}
+
+.ul-sociallinks {
+  display: flex;
+  flex-direction: row;
+  gap: 12.5vw;
+  margin-bottom: 10%;
+}
+
+.img-sociallinks {
+  width: 5.5vw;
+  height: 5vw;
+}
+
+.ul-sociallinks a:active .img-sociallinks {
+  filter: invert(70%) sepia(60%) saturate(1200%) hue-rotate(-10deg)
+    brightness(160%) contrast(85%);
+}
+
+/* Correcciones tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .img-illustration {
+    width: 100%;
+  }
+
+  .figure {
+    width: 80%;
+  }
+
+  .contenedor-extension {
+    width: 30rem;
+  }
+
+  .button-part3 {
+    width: 35rem;
+    height: 5vh;
+    font-size: 3.5vw;
+  }
 }
 
 /*@media (max-width: 768px) { /* Web format (NO hay que poner todo)
