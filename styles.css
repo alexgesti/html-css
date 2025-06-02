@@ -195,6 +195,10 @@ header {
   margin-bottom: 15%;
 }
 
+.tab-content {
+  display: none;
+}
+
 .img-illustration2 {
   width: 80%;
 }
@@ -206,6 +210,7 @@ header {
   right: 30%;
   top: 17.5%;
   border-bottom-right-radius: 30%;
+  border-top-right-radius: 30%;
   border-bottom-left-radius: 0%;
 }
 
@@ -220,6 +225,7 @@ header {
 
 .button-part2 {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -242,6 +248,22 @@ header {
 
 .button-part2:hover {
   color: var(--salmongeneral);
+}
+
+.button-part2.active {
+  position: relative;
+  color: var(--salmongeneral);
+  background-color: transparent;
+}
+
+.button-part2.active::after {
+  content: "";
+  position: absolute;
+  left: 27.5%;
+  right: 27.5%;
+  bottom: 0;
+  height: 4px;
+  background: var(--salmongeneral);
 }
 
 /* Parte 3 styles
@@ -379,7 +401,7 @@ details > summary {
 
 .button-part4 {
   width: 30%;
-  height: 5vh;
+  height: 6vh;
   margin-top: 10%;
   margin-bottom: 20%;
   letter-spacing: 0.1vw;
@@ -424,7 +446,7 @@ details > summary {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 5%;
+  margin-bottom: 2.5%;
 }
 
 .input-email-footer {
@@ -437,21 +459,31 @@ details > summary {
   padding-left: 1em;
 }
 
+.input-email-footer.error {
+  border: 5px solid rgb(255, 101, 83);
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+}
+
 .email-error {
-  display: flex;
+  display: none;
   align-items: center;
+  width: 92.5%;
   color: white;
   background-color: rgb(255, 101, 83);
+
+  margin-top: -0.1em;
 
   font-family: var(--fonttype);
   font-style: italic;
   font-size: 3.5vw;
   letter-spacing: 0.1vw;
+  text-align: left;
 }
 
 .button-contact {
   width: 90%;
-  height: 5vh;
+  height: 6vh;
   margin-top: 5%;
   margin-bottom: 10%;
   background-color: rgb(255, 101, 83);
@@ -547,7 +579,7 @@ details > summary {
 
   .button-part3 {
     width: 35rem;
-    height: 5vh;
+    height: 6vh;
     font-size: 3.5vw;
   }
 }
