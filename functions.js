@@ -11,17 +11,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Handles the email validation for the contact form
   const emailInput = document.getElementById("email-input");
+  const emailErrorImg = document.getElementById("email-error-img");
   const emailError = document.getElementById("email-error");
-  const contactBtn = document.querySelector(".button-contact");
 
   emailError.style.display = "none";
   emailInput.addEventListener("input", function () {
     const email = emailInput.value;
     if (email.includes("@") && email.includes(".")) {
       emailError.style.display = "none";
+      emailErrorImg.style.display = "none";
       emailInput.classList.remove("error");
     } else {
       emailError.style.display = "flex";
+      emailErrorImg.style.display = "block";
       emailInput.classList.add("error");
       e.preventDefault();
     }

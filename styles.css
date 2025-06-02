@@ -344,8 +344,8 @@ details > summary {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 100%;
   box-sizing: border-box;
+  width: 100%;
   margin: 10% 0;
   padding-bottom: 7.5%;
   border-bottom: solid 1px rgb(192, 192, 192);
@@ -447,6 +447,7 @@ details > summary {
   align-items: center;
   width: 100%;
   margin-bottom: 2.5%;
+  position: relative;
 }
 
 .input-email-footer {
@@ -465,12 +466,21 @@ details > summary {
   border-bottom-right-radius: 0%;
 }
 
+.img-error-footer {
+  width: 6%;
+  top: 20%;
+  right: 7.5%;
+  position: absolute;
+}
+
 .email-error {
   display: none;
   align-items: center;
-  width: 92.5%;
+  width: 90%;
   color: white;
   background-color: rgb(255, 101, 83);
+  border-bottom-left-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
 
   margin-top: -0.1em;
 
@@ -479,6 +489,10 @@ details > summary {
   font-size: 3.5vw;
   letter-spacing: 0.1vw;
   text-align: left;
+
+  padding-top: 1%;
+  padding-bottom: 2%;
+  padding-left: 2.5%;
 }
 
 .button-contact {
@@ -581,6 +595,14 @@ details > summary {
     width: 35rem;
     height: 6vh;
     font-size: 3.5vw;
+  }
+
+  .img-error-footer {
+    top: 15%;
+  }
+
+  .email-error {
+    width: 88%;
   }
 }
 
