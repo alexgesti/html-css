@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Handles the email validation for the contact form
   const emailInput = document.getElementById("email-input");
-  const emailErrorImg = document.getElementById("email-error-img");
+  const emailErrorImg = document.getElementById("img-error-footer");
   const emailError = document.getElementById("email-error");
 
   emailError.style.display = "none";
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       emailInput.classList.remove("error");
     } else {
       emailError.style.display = "flex";
-      emailErrorImg.style.display = "block";
+      emailErrorImg.style.display = "inline";
       emailInput.classList.add("error");
       e.preventDefault();
     }
