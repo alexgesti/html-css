@@ -48,3 +48,21 @@ function openTag(event, tagName) {
   document.getElementById(tagName).style.display = "block"; // Show the selected tab content
   event.currentTarget.className += " active"; // Add active class to the clicked tab
 }
+
+// Menú desplegable header
+document.addEventListener("DOMContentLoaded", function () {
+  const menuBtn = document.querySelector(".button-header");
+  const dropdown = document.getElementById("dropdown-menu");
+  if (menuBtn && dropdown) {
+    menuBtn.addEventListener("click", function () {
+      dropdown.classList.add("active");
+    });
+  }
+});
+
+function closeMenu() {
+  const dropdown = document.getElementById("dropdown-menu");
+  if (dropdown) {
+    dropdown.classList.remove("active");
+  }
+}
