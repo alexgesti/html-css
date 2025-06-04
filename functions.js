@@ -28,6 +28,15 @@ document.addEventListener("DOMContentLoaded", function () {
       e.preventDefault();
     }
   });
+
+  // Handles the menu button click to show the dropdown menu
+  const menuBtn = document.querySelector(".button-header");
+  const dropdown = document.getElementById("dropdown-menu");
+  if (menuBtn && dropdown) {
+    menuBtn.addEventListener("click", function () {
+      dropdown.classList.add("active");
+    });
+  }
 });
 
 // Tabs fuction.
@@ -49,17 +58,7 @@ function openTag(event, tagName) {
   event.currentTarget.className += " active"; // Add active class to the clicked tab
 }
 
-// Menú desplegable header
-document.addEventListener("DOMContentLoaded", function () {
-  const menuBtn = document.querySelector(".button-header");
-  const dropdown = document.getElementById("dropdown-menu");
-  if (menuBtn && dropdown) {
-    menuBtn.addEventListener("click", function () {
-      dropdown.classList.add("active");
-    });
-  }
-});
-
+// Close the dropdown menu when clicking in the X
 function closeMenu() {
   const dropdown = document.getElementById("dropdown-menu");
   if (dropdown) {

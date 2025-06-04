@@ -104,6 +104,135 @@ header {
   margin: auto;
 }
 
+/* Menú desplegable header */
+.dropdown-menu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(37, 48, 68, 0.85);
+  z-index: 2;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dropdown-menu.active {
+  display: flex;
+}
+
+.div-buttons-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: clamp(96px, 30%, 123px);
+}
+
+.button-header-og {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 4em;
+  max-height: 70.4px;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 0.5px white;
+  cursor: pointer;
+
+  font-family: var(--fonttype);
+  font-size: clamp(17.6px, 5.5vw, 22.55px);
+  font-weight: 500;
+  letter-spacing: 0.75vw;
+  color: white;
+  text-align: center;
+}
+
+.button-header-og:first-child {
+  border-top: solid 0.5px white;
+}
+
+.button-header-og:last-child {
+  height: 3em;
+  border: solid 3px white;
+  border-radius: 5%;
+  margin-top: 10%;
+  font-weight: 550;
+}
+
+.button-header-og:active {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: rgb(37, 48, 68);
+}
+
+.button-header-og:last-child:active {
+  background-color: white;
+  color: rgb(37, 48, 68);
+}
+
+.img-logo-dropdown {
+  position: absolute;
+  top: clamp(35.2px, 11vw, 45.1px);
+  left: 10vw;
+  width: 40vw;
+  min-width: 128px;
+  max-width: 164px;
+  height: 7vw;
+  min-height: 22.4px;
+  max-height: 28px;
+}
+
+.dropdown-close {
+  position: absolute;
+  top: clamp(38.4px, 12vw, 49.2px);
+  right: 10vw;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-close:active {
+  filter: invert(17%) sepia(17%) saturate(1166%) hue-rotate(178deg)
+    brightness(90%) contrast(92%);
+}
+
+.img-cross {
+  width: 5vw;
+  min-width: 16px;
+  max-width: 20.5px;
+  height: 5vw;
+  min-height: 16px;
+  max-height: 20.5px;
+}
+
+.ul-sociallinks-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  gap: 12vw;
+  margin-bottom: clamp(32px, 10%, 41px);
+}
+
+.img-sociallinks-header {
+  width: 7.5vw;
+  max-width: 30.75px;
+  height: 7vw;
+  max-height: 28.7px;
+}
+
+.ul-sociallinks-header a:active .img-sociallinks-header {
+  filter: invert(17%) sepia(17%) saturate(1166%) hue-rotate(178deg)
+    brightness(90%) contrast(92%);
+}
+
 /* Parte 1 styles
     This is the first part of the page which contains the illustration and the "Bookmark Manager" text. */
 .section-part1 {
@@ -456,8 +585,9 @@ details > summary {
   justify-content: center;
   align-items: center;
   width: 85vw;
-  max-width: 500px;
   min-width: 180px;
+  max-width: 500px;
+
   margin-bottom: 2.5%;
   position: relative;
 }
@@ -481,7 +611,7 @@ details > summary {
 .img-error-footer {
   display: none;
   width: 1.5em;
-  top: 17.5%;
+  top: 12.5%;
   right: 3.5%;
   position: absolute;
 }
@@ -594,52 +724,6 @@ details > summary {
     brightness(160%) contrast(85%);
 }
 
-/* Menú desplegable header */
-.dropdown-menu {
-  display: none;
-  position: fixed;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(32, 51, 84, 0.97);
-  z-index: 2;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2em;
+@media (max-width: 1024px) {
+  /* Web format */
 }
-
-.dropdown-menu.active {
-  display: flex;
-}
-
-.dropdown-item {
-  background: #fff;
-  color: var(--bluegeneral, #203354);
-  border: none;
-  border-radius: 7px;
-  font: 600 1.5rem var(--fonttype, sans-serif);
-  padding: 1em 2em;
-  margin: 0.5em 0;
-  cursor: pointer;
-}
-
-.dropdown-item:active {
-  background: var(--bluegeneral, #203354);
-  color: #fff;
-}
-
-.dropdown-close {
-  position: absolute;
-  top: 2vw;
-  right: 5vw;
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 2.5rem;
-  cursor: pointer;
-}
-
-/*@media (max-width: 768px) { /* Web format (NO hay que poner todo)
-    
-}*/
