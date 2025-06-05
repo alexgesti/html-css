@@ -724,6 +724,79 @@ details > summary {
     brightness(160%) contrast(85%);
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   /* Web format */
+  header {
+    margin-top: 7.5%;
+    margin-bottom: 10%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-logo {
+    width: 20%;
+    height: 20%;
+  }
+
+  .button-header,
+  .img-logo-dropdown,
+  .img-cross,
+  .ul-sociallinks-header {
+    display: none;
+  }
+
+  .dropdown-menu {
+    display: flex;
+    position: relative;
+    height: auto;
+    width: 100%;
+    background: none;
+    z-index: 0;
+    flex-direction: row;
+    justify-content: right;
+  }
+
+  .div-buttons-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    margin-top: auto;
+    gap: 2vw;
+    margin-right: 10%;
+  }
+
+  .button-header-og {
+    flex-direction: row;
+    height: auto;
+    max-height: auto;
+    border: none;
+
+    margin: 0;
+    margin-top: 0;
+
+    padding: 2.5%;
+
+    font-size: 1.5vw;
+    letter-spacing: 0.1vw;
+    color: rgb(28, 28, 28);
+  }
+
+  .button-header-og:last-child {
+    height: auto;
+    border: solid 3px rgb(255, 101, 83);
+    border-radius: 10%;
+    background-color: rgb(255, 101, 83);
+    color: white;
+    margin-top: 0;
+  }
+
+  .button-header-og:active {
+    color: var(--salmongeneral);
+  }
+
+  .button-header-og:last-child:active {
+    background-color: white;
+    color: var(--salmongeneral);
+  }
 }
