@@ -264,11 +264,18 @@ header {
   position: absolute;
 }
 
+.div-text-part1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .div-button-part1 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   width: 85%;
+  margin: 10% auto;
   margin-top: 10%;
   margin-bottom: 25%;
 }
@@ -726,6 +733,7 @@ details > summary {
 
 @media (min-width: 1024px) {
   /* Web format */
+  /* Header */
   header {
     margin-top: 7.5%;
     margin-bottom: 10%;
@@ -798,5 +806,64 @@ details > summary {
   .button-header-og:last-child:active {
     background-color: white;
     color: var(--salmongeneral);
+  }
+
+  /* Parte 1 sytles (Desktop) */
+  .section-part1 {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .div-illustration {
+    margin-bottom: auto;
+    width: 100%;
+  }
+
+  .img-illustration {
+    width: 42.5vw;
+  }
+
+  .figure {
+    width: 35vw;
+  }
+
+  .div-text-part1 h1 {
+    font-size: 3.75vw;
+    line-height: 5vw;
+    margin: 0% 0%;
+    margin-bottom: 5%;
+    text-align: left;
+    padding-left: 12.5%;
+  }
+
+  .div-text-part1 p {
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+    margin: 0% 0%;
+    text-align: left;
+    padding-left: 12.5%;
+  }
+
+  .div-button-part1 {
+    justify-content: left;
+    margin: auto;
+    padding-left: 10%;
+    gap: 2vw;
+  }
+
+  .button-chromep1,
+  .button-firefoxp1 {
+    width: 35%;
+    font-size: 1.5vw;
+  }
+
+  /* Part 2 sytles (Windows) */
+  .section-part2 h2 {
+    font-size: 3.75vw;
+    line-height: 5vw;
+    margin: 0% 0%;
+    margin-bottom: 5%;
   }
 }
