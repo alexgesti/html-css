@@ -861,9 +861,58 @@ details > summary {
 
   /* Part 2 sytles (Windows) */
   .section-part2 h2 {
-    font-size: 3.75vw;
-    line-height: 5vw;
-    margin: 0% 0%;
+    font-size: 3.25vw;
+    line-height: 0;
+    margin: 0;
     margin-bottom: 5%;
+    text-align: left;
+  }
+
+  .section-part2 p {
+    font-size: 1.5vw;
+    line-height: 2.25vw;
+    margin: 0% 30%;
+    text-align: center;
+  }
+
+  .div-buttons {
+    flex-direction: row;
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  .button-part2 {
+    width: 25%;
+    height: 5em;
+
+    font-size: 1.5vw;
+  }
+
+  .button-part2:first-child {
+    border-top: none;
+  }
+
+  .button-part2.active::after {
+    left: 0;
+    right: 0;
+  }
+
+  .tab-content {
+    flex-direction: row;
+    align-items: center;
+    height: 30vw;
+  }
+
+  .section-part2 .div-illustration {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .img-illustration2 {
+    width: 70%;
+  }
+
+  .section-part2 .figure {
+    width: 70%;
   }
 }

@@ -54,8 +54,25 @@ function openTag(event, tagName) {
     buttons[i].className = buttons[i].className.replace(" active", ""); // Remove active class from all tabs
   }
 
-  document.getElementById(tagName).style.display = "block"; // Show the selected tab content
+  const tab = document.getElementById(tagName);
+
+  tab.style.display = "flex"; // Show the selected tab content
+  setTabDirection(tab);
+
+  currentTab = tab;
+
   event.currentTarget.className += " active"; // Add active class to the clicked tab
+}
+
+window.addEventListener("resize", function resizeHandler() {
+  setTabDirection(currentTab);
+});
+
+function setTabDirection(tab) {
+  if (!tab) return;
+  if (window.matchMedia("(min-width: 1024px)").matches)
+    tab.style.flexDirection = "row";
+  else tab.style.flexDirection = "column";
 }
 
 // Close the dropdown menu when clicking in the X
