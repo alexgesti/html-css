@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const tabcontent = document.getElementsByClassName("tab-content");
   const buttons = document.getElementsByClassName("button-part2");
   if (tabcontent.length > 0) {
-    tabcontent[0].style.display = "block";
+    if (window.matchMedia("(min-width: 1024px)").matches)
+      tabcontent[0].style.display = "flex";
+    else tabcontent[0].style.display = "block";
   }
   if (buttons.length > 0) {
     buttons[0].className += " active";
