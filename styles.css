@@ -166,12 +166,14 @@ header {
   font-weight: 550;
 }
 
-.button-header-og:active {
+.button-header-og:active,
+.button-header-og:hover {
   background-color: rgba(255, 255, 255, 0.25);
   color: rgb(37, 48, 68);
 }
 
-.button-header-og:last-child:active {
+.button-header-og:last-child:active,
+.button-header-og:last-child:hover {
   background-color: white;
   color: rgb(37, 48, 68);
 }
@@ -198,7 +200,8 @@ header {
   cursor: pointer;
 }
 
-.dropdown-close:active {
+.dropdown-close:active,
+.dropdown-close:hover {
   filter: invert(17%) sepia(17%) saturate(1166%) hue-rotate(178deg)
     brightness(90%) contrast(92%);
 }
@@ -231,7 +234,8 @@ header {
   max-height: 28.7px;
 }
 
-.ul-sociallinks-header a:active .img-sociallinks-header {
+.ul-sociallinks-header a:active .img-sociallinks-header,
+.ul-sociallinks-header a:hover .img-sociallinks-header {
   filter: invert(17%) sepia(17%) saturate(1166%) hue-rotate(178deg)
     brightness(90%) contrast(92%);
 }
@@ -288,7 +292,8 @@ header {
   height: 195%;
 }
 
-.button-chromep1:active {
+.button-chromep1:active,
+.button-chromep1:hover {
   background-color: white;
   color: var(--bluegeneral);
 }
@@ -313,7 +318,8 @@ header {
   text-align: center;
 }
 
-.button-firefoxp1:active {
+.button-firefoxp1:active,
+.button-firefoxp1:hover {
   background-color: white;
   border: solid rgb(132, 132, 132);
   color: rgb(132, 132, 132);
@@ -464,7 +470,8 @@ header {
   font-size: clamp(1rem, 3.5vw, 1.5rem);
 }
 
-.button-part3:active {
+.button-part3:active,
+.button-part3:hover {
   background-color: white;
   color: var(--bluegeneral);
 }
@@ -565,7 +572,8 @@ details > summary {
   letter-spacing: 0.1vw;
 }
 
-.button-part4:active {
+.button-part4:active,
+.button-part4:hover {
   background-color: white;
   color: var(--bluegeneral);
 }
@@ -688,7 +696,8 @@ details > summary {
   letter-spacing: 0.25vw;
 }
 
-.button-contact:active {
+.button-contact:active,
+.button-contact:hover {
   background-color: white;
   color: rgb(255, 101, 83);
 }
@@ -732,7 +741,8 @@ details > summary {
   margin: 15% 0;
 }
 
-.button-footer:active {
+.button-footer:active,
+.button-footer:hover {
   color: var(--salmongeneral);
   outline: none;
 }
@@ -749,7 +759,8 @@ details > summary {
   height: 5vw;
 }
 
-.ul-sociallinks a:active .img-sociallinks {
+.ul-sociallinks a:active .img-sociallinks,
+.ul-sociallinks a:hover .img-sociallinks {
   filter: invert(70%) sepia(60%) saturate(1200%) hue-rotate(-10deg)
     brightness(160%) contrast(85%);
 }
@@ -822,11 +833,13 @@ details > summary {
     margin-top: 0;
   }
 
-  .button-header-og:active {
+  .button-header-og:active,
+  .button-header-og:hover {
     color: var(--salmongeneral);
   }
 
-  .button-header-og:last-child:active {
+  .button-header-og:last-child:active,
+  .button-header-og:last-child:hover {
     background-color: white;
     color: var(--salmongeneral);
   }
@@ -1173,7 +1186,7 @@ details > summary {
   }
 
   .img-sociallinks {
-    width: 2.5vw;
-    height: 2vw;
+    width: 2.25vw;
+    height: 2.25vw;
   }
 }
