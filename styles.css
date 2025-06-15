@@ -633,7 +633,7 @@ details > summary {
   border-radius: 7.5px;
 
   font-family: var(--fonttype);
-  font-size: 2.5vw;
+  font-size: clamp(25.6px, 2.5vw, 36px);
   padding-left: 1em;
 }
 
@@ -819,7 +819,7 @@ details > summary {
 
     padding: 2.5%;
 
-    font-size: 1.5vw;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
     letter-spacing: 0.1vw;
     color: rgb(28, 28, 28);
   }
@@ -831,6 +831,7 @@ details > summary {
     background-color: rgb(255, 101, 83);
     color: white;
     margin-top: 0;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
   }
 
   .button-header-og:active,
@@ -892,7 +893,7 @@ details > summary {
   .button-chromep1,
   .button-firefoxp1 {
     width: 35%;
-    font-size: 1.5vw;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
   }
 
   /* Part 2 sytles (Windows) */
@@ -925,7 +926,7 @@ details > summary {
     width: 25%;
     height: 5em;
 
-    font-size: 1.5vw;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
   }
 
   .button-part2:first-child {
@@ -1042,7 +1043,7 @@ details > summary {
     width: 15vw;
     height: 4vw;
 
-    font-size: 1.15vw;
+    font-size: clamp(0.5px, 1.15vw, 1.25rem);
   }
 
   /* Part 4 sytles (Windows) */
@@ -1092,7 +1093,7 @@ details > summary {
   .button-part4 {
     width: 11vw;
     height: 5vw;
-    font-size: 1.25vw;
+    font-size: clamp(0.75rem, 1.25vw, 1.25rem);
     margin-top: 3.5%;
     margin-bottom: 3.5%;
   }
@@ -1146,7 +1147,7 @@ details > summary {
     max-width: auto;
     height: 5vw;
     max-height: auto;
-    font-size: Clamp(20px, 1.75vw, 25px);
+    font-size: clamp(1rem, 1.75vw, 1.25rem);
     align-items: center;
   }
 
@@ -1173,7 +1174,7 @@ details > summary {
   }
 
   .button-footer {
-    font-size: 1vw;
+    font-size: clamp(0.5rem, 1vw, 1.25rem);
     letter-spacing: 0.5vw;
     margin: 0;
   }
