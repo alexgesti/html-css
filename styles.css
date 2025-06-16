@@ -247,7 +247,6 @@ header {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  overflow-x: hidden;
 }
 
 .div-illustration {
@@ -255,7 +254,6 @@ header {
   justify-content: center;
   margin-bottom: 10%;
   position: relative;
-  overflow-x: hidden;
 }
 
 .img-illustration {
@@ -266,7 +264,7 @@ header {
   background-color: var(--bluegeneral);
   width: 70vw;
   height: 75%;
-  left: 30%;
+  left: 29%;
   top: 30%;
   border-bottom-left-radius: 30%;
   z-index: -1;
@@ -865,6 +863,8 @@ details > summary {
 
   .figure {
     width: 35vw;
+    right: 0;
+    left: auto;
   }
 
   .div-text-part1 h1 {
