@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Html&CssWithFlex</title>
-    <link rel="stylesheet" href="reset.css"/>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="functions.js"></script>
   </head>
   <body>
@@ -29,7 +29,12 @@
           src="https://github.com/alexgesti/1.1-HTML-i-CSS-amb-Flex/blob/main/Imagenes/logo-bookmark-fullwhite.svg?raw=true"
           class="img-logo-dropdown"
         />
-        <button class="dropdown-close" type="button" onclick="closeMenu()" aria-label="Close menu">
+        <button
+          class="dropdown-close"
+          type="button"
+          onclick="closeMenu()"
+          aria-label="Close menu"
+        >
           <img
             src="https://github.com/alexgesti/1.1-HTML-i-CSS-amb-Flex/blob/main/Imagenes/icon-close.svg?raw=true"
             class="img-cross"
@@ -37,15 +42,43 @@
           />
         </button>
         <div class="div-buttons-header">
-          <button class="button-header-og" type="button" aria-label="Go to Features section">FEATURES</button>
-          <button class="button-header-og" type="button" aria-label="Go to Pricing section">PRICING</button>
-          <button class="button-header-og" type="button" aria-label="Go to Contact section">CONTACT</button>
-          <button class="button-header-og" type="button" aria-label="Go to Login section">LOGIN</button>
+          <button
+            class="button-header-og"
+            type="button"
+            aria-label="Go to Features section"
+          >
+            FEATURES
+          </button>
+          <button
+            class="button-header-og"
+            type="button"
+            aria-label="Go to Pricing section"
+          >
+            PRICING
+          </button>
+          <button
+            class="button-header-og"
+            type="button"
+            aria-label="Go to Contact section"
+          >
+            CONTACT
+          </button>
+          <button
+            class="button-header-og"
+            type="button"
+            aria-label="Go to Login section"
+          >
+            LOGIN
+          </button>
         </div>
         <!-- Redes sociales -->
         <ul class="ul-sociallinks-header">
           <li>
-            <a href="https://facebook.com" target="_blank" aria-label="Visit Facebook">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              aria-label="Visit Facebook"
+            >
               <img
                 src="https://github.com/alexgesti/html-css/blob/main/Imagenes/icon-facebook.svg?raw=true"
                 class="img-sociallinks-header"
@@ -53,7 +86,11 @@
             </a>
           </li>
           <li>
-            <a href="https://twitter.com" target="_blank" aria-label="Visit Twitter">
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              aria-label="Visit Twitter"
+            >
               <img
                 src="https://github.com/alexgesti/html-css/blob/main/Imagenes/icon-twitter.svg?raw=true"
                 class="img-sociallinks-header"
@@ -61,6 +98,7 @@
             </a>
           </li>
         </ul>
+      </div>
     </header>
     <main>
       <!-- Contenido principal -->
@@ -77,13 +115,26 @@
         <div class="div-text-part1">
           <h1>A Simple Bookmark Manager</h1>
           <p>
-            A clean and simple interface to organize your favourite websites. Open
-            a new browser tab and see your sites load instantly. Try it for free.
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
           </p>
           <div class="div-button-part1">
             <!-- "Botones" para obtenerlo en chrome o firefox. -->
-            <button class="button-chromep1" type="button" aria-label="More information about Bookmarking on Chrome">Get it on Chrome</button>
-            <button class="button-firefoxp1" type="button" aria-label="More information about Bookmarking on Firefox">Get it on Firefox</button>
+            <button
+              class="button-chromep1"
+              type="button"
+              aria-label="More information about Bookmarking on Chrome"
+            >
+              Get it on Chrome
+            </button>
+            <button
+              class="button-firefoxp1"
+              type="button"
+              aria-label="More information about Bookmarking on Firefox"
+            >
+              Get it on Firefox
+            </button>
           </div>
         </div>
       </section>
@@ -97,13 +148,25 @@
         </p>
         <!-- Tab links -->
         <div class="div-buttons">
-          <button class="button-part2" type="button" onclick="openTag(event, 'bookmarks')">
+          <button
+            class="button-part2"
+            type="button"
+            onclick="openTag(event, 'bookmarks')"
+          >
             Simple Bookmarking
           </button>
-          <button class="button-part2" type="button" onclick="openTag(event, 'intelligent')">
+          <button
+            class="button-part2"
+            type="button"
+            onclick="openTag(event, 'intelligent')"
+          >
             Speedy Searching
           </button>
-          <button class="button-part2" type="button" onclick="openTag(event, 'share')">
+          <button
+            class="button-part2"
+            type="button"
+            onclick="openTag(event, 'share')"
+          >
             Easy Sharing
           </button>
         </div>
@@ -126,7 +189,14 @@
               interface gives you complete control over how you manage your
               favourite sites.
             </p>
-            <button class="button-chromep1" type="button" aria-label="More information about Easy Sharing">More info</button> <!-- Same type of button as the chrome one. Reused because it doesn't have any function. -->
+            <button
+              class="button-chromep1"
+              type="button"
+              aria-label="More information about Easy Sharing"
+            >
+              More info
+            </button>
+            <!-- Same type of button as the chrome one. Reused because it doesn't have any function. -->
           </div>
         </div>
         <!-- Tab 2-->
@@ -146,7 +216,8 @@
               Our powerful search feature will help you find saved sites in no
               time at all. No need to trawl through all of your bookmarks.
             </p>
-            <button class="button-chromep1" type="button">More info</button> <!-- Same type of button as the chrome one. Reused because it doesn't have any function. -->
+            <button class="button-chromep1" type="button">More info</button>
+            <!-- Same type of button as the chrome one. Reused because it doesn't have any function. -->
           </div>
         </div>
         <!-- Tab 3-->
@@ -166,7 +237,8 @@
               Easily share your bookmarks and collections with others. Create a
               shareable link that you can send at the click of a button.
             </p>
-            <button class="button-chromep1" type="button">More info</button> <!-- Same type of button as the chrome one. Reused because it doesn't have any function. -->
+            <button class="button-chromep1" type="button">More info</button>
+            <!-- Same type of button as the chrome one. Reused because it doesn't have any function. -->
           </div>
         </div>
       </section>
@@ -193,7 +265,9 @@
             />
             <div>
               <!--  Boton de extension (Chrome)  -->
-              <button class="button-part3" type="button">Add & Install Extension</button>
+              <button class="button-part3" type="button">
+                Add & Install Extension
+              </button>
             </div>
           </div>
           <div class="contenedor-extension">
@@ -210,7 +284,9 @@
             />
             <div>
               <!-- Boton de extension (Firefox) -->
-              <button class="button-part3" type="button">Add & Install Extension</button>
+              <button class="button-part3" type="button">
+                Add & Install Extension
+              </button>
             </div>
           </div>
           <div class="contenedor-extension">
@@ -227,7 +303,9 @@
             />
             <div>
               <!-- Boton de extension (Opera) -->
-              <button class="button-part3" type="button">Add & Install Extension</button>
+              <button class="button-part3" type="button">
+                Add & Install Extension
+              </button>
             </div>
           </div>
         </div>
@@ -331,14 +409,36 @@
           class="img-logofooter"
         />
         <div class="div-button-footer">
-          <button class="button-footer" type="button" aria-label="Go to Features section">FEATURES</button>
-          <button class="button-footer" type="button" aria-label="Go to Pricing section">PRICING</button>
-          <button class="button-footer" type="button" aria-label="Go to Contact section">CONTACT</button>
+          <button
+            class="button-footer"
+            type="button"
+            aria-label="Go to Features section"
+          >
+            FEATURES
+          </button>
+          <button
+            class="button-footer"
+            type="button"
+            aria-label="Go to Pricing section"
+          >
+            PRICING
+          </button>
+          <button
+            class="button-footer"
+            type="button"
+            aria-label="Go to Contact section"
+          >
+            CONTACT
+          </button>
         </div>
         <!-- Redes sociales -->
         <ul class="ul-sociallinks">
           <li>
-            <a href="https://facebook.com" target="_blank" aria-label="Visit Facebook">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              aria-label="Visit Facebook"
+            >
               <img
                 src="https://github.com/alexgesti/html-css/blob/main/Imagenes/icon-facebook.svg?raw=true"
                 class="img-sociallinks"
@@ -346,7 +446,11 @@
             </a>
           </li>
           <li>
-            <a href="https://twitter.com" target="_blank" aria-label="Visit Twitter">
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              aria-label="Visit Twitter"
+            >
               <img
                 src="https://github.com/alexgesti/html-css/blob/main/Imagenes/icon-twitter.svg?raw=true"
                 class="img-sociallinks"
