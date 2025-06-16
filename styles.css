@@ -166,14 +166,12 @@ header {
   font-weight: 550;
 }
 
-.button-header-og:active,
-.button-header-og:hover {
+.button-header-og:active {
   background-color: rgba(255, 255, 255, 0.25);
   color: rgb(37, 48, 68);
 }
 
-.button-header-og:last-child:active,
-.button-header-og:last-child:hover {
+.button-header-og:last-child:active {
   background-color: white;
   color: rgb(37, 48, 68);
 }
@@ -200,8 +198,7 @@ header {
   cursor: pointer;
 }
 
-.dropdown-close:active,
-.dropdown-close:hover {
+.dropdown-close:active {
   filter: invert(17%) sepia(17%) saturate(1166%) hue-rotate(178deg)
     brightness(90%) contrast(92%);
 }
@@ -234,8 +231,7 @@ header {
   max-height: 28.7px;
 }
 
-.ul-sociallinks-header a:active .img-sociallinks-header,
-.ul-sociallinks-header a:hover .img-sociallinks-header {
+.ul-sociallinks-header a:active .img-sociallinks-header {
   filter: invert(17%) sepia(17%) saturate(1166%) hue-rotate(178deg)
     brightness(90%) contrast(92%);
 }
@@ -292,8 +288,7 @@ header {
   height: 195%;
 }
 
-.button-chromep1:active,
-.button-chromep1:hover {
+.button-chromep1:active {
   background-color: white;
   color: var(--bluegeneral);
 }
@@ -318,8 +313,7 @@ header {
   text-align: center;
 }
 
-.button-firefoxp1:active,
-.button-firefoxp1:hover {
+.button-firefoxp1:active {
   background-color: white;
   border: solid rgb(132, 132, 132);
   color: rgb(132, 132, 132);
@@ -470,8 +464,7 @@ header {
   font-size: clamp(1rem, 3.5vw, 1.5rem);
 }
 
-.button-part3:active,
-.button-part3:hover {
+.button-part3:active {
   background-color: white;
   color: var(--bluegeneral);
 }
@@ -572,8 +565,7 @@ details > summary {
   letter-spacing: 0.1vw;
 }
 
-.button-part4:active,
-.button-part4:hover {
+.button-part4:active {
   background-color: white;
   color: var(--bluegeneral);
 }
@@ -633,7 +625,7 @@ details > summary {
   border-radius: 7.5px;
 
   font-family: var(--fonttype);
-  font-size: clamp(25.6px, 2.5vw, 36px);
+  font-size: 2.5vw;
   padding-left: 1em;
 }
 
@@ -696,8 +688,7 @@ details > summary {
   letter-spacing: 0.25vw;
 }
 
-.button-contact:active,
-.button-contact:hover {
+.button-contact:active {
   background-color: white;
   color: rgb(255, 101, 83);
 }
@@ -741,8 +732,7 @@ details > summary {
   margin: 15% 0;
 }
 
-.button-footer:active,
-.button-footer:hover {
+.button-footer:active {
   color: var(--salmongeneral);
   outline: none;
 }
@@ -759,8 +749,7 @@ details > summary {
   height: 5vw;
 }
 
-.ul-sociallinks a:active .img-sociallinks,
-.ul-sociallinks a:hover .img-sociallinks {
+.ul-sociallinks a:active .img-sociallinks {
   filter: invert(70%) sepia(60%) saturate(1200%) hue-rotate(-10deg)
     brightness(160%) contrast(85%);
 }
@@ -819,7 +808,7 @@ details > summary {
 
     padding: 2.5%;
 
-    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    font-size: 1.5vw;
     letter-spacing: 0.1vw;
     color: rgb(28, 28, 28);
   }
@@ -831,16 +820,13 @@ details > summary {
     background-color: rgb(255, 101, 83);
     color: white;
     margin-top: 0;
-    font-size: clamp(1rem, 1.5vw, 1.25rem);
   }
 
-  .button-header-og:active,
-  .button-header-og:hover {
+  .button-header-og:active {
     color: var(--salmongeneral);
   }
 
-  .button-header-og:last-child:active,
-  .button-header-og:last-child:hover {
+  .button-header-og:last-child:active {
     background-color: white;
     color: var(--salmongeneral);
   }
@@ -893,7 +879,7 @@ details > summary {
   .button-chromep1,
   .button-firefoxp1 {
     width: 35%;
-    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    font-size: 1.5vw;
   }
 
   /* Part 2 sytles (Windows) */
@@ -926,7 +912,7 @@ details > summary {
     width: 25%;
     height: 5em;
 
-    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    font-size: 1.5vw;
   }
 
   .button-part2:first-child {
@@ -1043,7 +1029,7 @@ details > summary {
     width: 15vw;
     height: 4vw;
 
-    font-size: clamp(0.5px, 1.15vw, 1.25rem);
+    font-size: 1.15vw;
   }
 
   /* Part 4 sytles (Windows) */
@@ -1093,7 +1079,7 @@ details > summary {
   .button-part4 {
     width: 11vw;
     height: 5vw;
-    font-size: clamp(0.75rem, 1.25vw, 1.25rem);
+    font-size: 1.25vw;
     margin-top: 3.5%;
     margin-bottom: 3.5%;
   }
@@ -1129,7 +1115,7 @@ details > summary {
   }
 
   .input-email-footer {
-    height: 5vw;
+    height: clamp(40px, 5vw, 60px);
     font-size: Clamp(10px, 1.5vw, 30px);
   }
 
@@ -1147,7 +1133,7 @@ details > summary {
     max-width: auto;
     height: 5vw;
     max-height: auto;
-    font-size: clamp(1rem, 1.75vw, 1.25rem);
+    font-size: Clamp(20px, 1.75vw, 25px);
     align-items: center;
   }
 
@@ -1174,7 +1160,7 @@ details > summary {
   }
 
   .button-footer {
-    font-size: clamp(0.5rem, 1vw, 1.25rem);
+    font-size: 1vw;
     letter-spacing: 0.5vw;
     margin: 0;
   }
@@ -1187,7 +1173,7 @@ details > summary {
   }
 
   .img-sociallinks {
-    width: 2.25vw;
-    height: 2.25vw;
+    width: 2.5vw;
+    height: 2vw;
   }
 }
