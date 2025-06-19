@@ -14,13 +14,15 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="functions.js"></script>
   </head>
-  <body>
-    <header>
-      <div class="container">
+  <body class="d-flex flex-column align-items-center bg-white">
+    <div class="container-fluid p-0">
+      <header
+        class="d-flex justify-content-between align-items-center w-100 px-4 my-5 position-relative"
+      >
         <!-- Encabezado -->
         <img
           src="https://github.com/alexgesti/html-css/blob/main/Imagenes/logo-bookmark.svg?raw=true"
-          class="img-logo"
+          class="img-fluid img-logo"
         />
         <button class="button-header" type="button" aria-label="Open menu">
           <!-- Boton de menu -->
@@ -31,53 +33,35 @@
           />
         </button>
         <!-- Menú desplegable -->
-        <div id="dropdown-menu" class="dropdown-menu">
+        <div
+          class="dropdown-menu-custom d-flex flex-column align-items-center justify-content-start position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 text-white"
+        >
           <img
-            src="https://github.com/alexgesti/1.1-HTML-i-CSS-amb-Flex/blob/main/Imagenes/logo-bookmark-fullwhite.svg?raw=true"
+            src="https://github.com/alexgesti/html-css/blob/main/Imagenes/icon-hamburger.svg?raw=true"
             class="img-logo-dropdown"
           />
+
           <button
             class="dropdown-close"
-            type="button"
-            onclick="closeMenu()"
+            id="menu-close"
             aria-label="Close menu"
           >
             <img
               src="https://github.com/alexgesti/1.1-HTML-i-CSS-amb-Flex/blob/main/Imagenes/icon-close.svg?raw=true"
               class="img-cross"
-              alt=""
             />
           </button>
-          <div class="div-buttons-header">
-            <button
-              class="button-header-og"
-              type="button"
-              aria-label="Go to Features section"
-            >
-              FEATURES
-            </button>
-            <button
-              class="button-header-og"
-              type="button"
-              aria-label="Go to Pricing section"
-            >
-              PRICING
-            </button>
-            <button
-              class="button-header-og"
-              type="button"
-              aria-label="Go to Contact section"
-            >
-              CONTACT
-            </button>
-            <button
-              class="button-header-og"
-              type="button"
-              aria-label="Go to Login section"
-            >
-              LOGIN
-            </button>
+
+          <!-- Links -->
+          <div
+            class="d-flex flex-column justify-content-center align-items-center w-75 mt-5 gap-4 div-buttons-header"
+          >
+            <a href="#features" class="button-header-og">FEATURES</a>
+            <a href="#download" class="button-header-og">DOWNLOAD</a>
+            <a href="#faq" class="button-header-og">FAQ</a>
+            <a href="#login" class="button-header-og">LOGIN</a>
           </div>
+
           <!-- Redes sociales -->
           <ul class="ul-sociallinks-header">
             <li>
@@ -106,372 +90,372 @@
             </li>
           </ul>
         </div>
-      </div>
-    </header>
-    <main>
-      <!-- Contenido principal -->
-      <section class="section-part1">
-        <!-- "Parte 1" -->
-        <div class="div-illustration">
-          <img
-            src="https://github.com/alexgesti/html-css/blob/main/Imagenes/illustration-hero.svg?raw=true"
-            class="img-illustration"
-          />
-          <div class="figure"></div>
-          <!-- Fondo azul, hecho con flex. -->
-        </div>
-        <div class="div-text-part1">
-          <h1>A Simple Bookmark Manager</h1>
+      </header>
+      <main>
+        <!-- Contenido principal -->
+        <section class="section-part1">
+          <!-- "Parte 1" -->
+          <div class="div-illustration">
+            <img
+              src="https://github.com/alexgesti/html-css/blob/main/Imagenes/illustration-hero.svg?raw=true"
+              class="img-illustration"
+            />
+            <div class="figure"></div>
+            <!-- Fondo azul, hecho con flex. -->
+          </div>
+          <div class="div-text-part1">
+            <h1>A Simple Bookmark Manager</h1>
+            <p>
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
+            </p>
+            <div class="div-button-part1">
+              <!-- "Botones" para obtenerlo en chrome o firefox. -->
+              <button
+                class="button-chromep1"
+                type="button"
+                aria-label="More information about Bookmarking on Chrome"
+              >
+                Get it on Chrome
+              </button>
+              <button
+                class="button-firefoxp1"
+                type="button"
+                aria-label="More information about Bookmarking on Firefox"
+              >
+                Get it on Firefox
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="section-part2">
+          <!-- "Parte 2" -->
+          <h2>Features</h2>
           <p>
-            A clean and simple interface to organize your favourite websites.
-            Open a new browser tab and see your sites load instantly. Try it for
-            free.
+            Our aim is to make it quick and easy for you to access your
+            favourite websites. Your bookmarks sync between your devices so you
+            can access them on the go.
           </p>
-          <div class="div-button-part1">
-            <!-- "Botones" para obtenerlo en chrome o firefox. -->
+          <!-- Tab links -->
+          <div class="div-buttons">
             <button
-              class="button-chromep1"
+              class="button-part2"
               type="button"
-              aria-label="More information about Bookmarking on Chrome"
+              onclick="openTag(event, 'bookmarks')"
             >
-              Get it on Chrome
+              Simple Bookmarking
             </button>
             <button
-              class="button-firefoxp1"
+              class="button-part2"
               type="button"
-              aria-label="More information about Bookmarking on Firefox"
+              onclick="openTag(event, 'intelligent')"
             >
-              Get it on Firefox
+              Speedy Searching
             </button>
-          </div>
-        </div>
-      </section>
-      <section class="section-part2">
-        <!-- "Parte 2" -->
-        <h2>Features</h2>
-        <p>
-          Our aim is to make it quick and easy for you to access your favourite
-          websites. Your bookmarks sync between your devices so you can access
-          them on the go.
-        </p>
-        <!-- Tab links -->
-        <div class="div-buttons">
-          <button
-            class="button-part2"
-            type="button"
-            onclick="openTag(event, 'bookmarks')"
-          >
-            Simple Bookmarking
-          </button>
-          <button
-            class="button-part2"
-            type="button"
-            onclick="openTag(event, 'intelligent')"
-          >
-            Speedy Searching
-          </button>
-          <button
-            class="button-part2"
-            type="button"
-            onclick="openTag(event, 'share')"
-          >
-            Easy Sharing
-          </button>
-        </div>
-        <!-- Tabs content -->
-        <!-- Tab 1-->
-        <div id="bookmarks" class="tab-content">
-          <!-- Contenedor de toda la info de las características. -->
-          <div class="div-illustration">
-            <img
-              src="https://github.com/alexgesti/html-css/blob/main/Imagenes/illustration-features-tab-1.svg?raw=true"
-              class="img-illustration2"
-            />
-            <div class="figure"></div>
-            <!-- Fondo azul, hecho con flex. -->
-          </div>
-          <div class="div-tab-info">
-            <h2>Bookmark in one click</h2>
-            <p>
-              Organize your bookmarks however you like. Our simple drag-and-drop
-              interface gives you complete control over how you manage your
-              favourite sites.
-            </p>
             <button
-              class="button-chromep1"
+              class="button-part2"
               type="button"
-              aria-label="More information about Easy Sharing"
+              onclick="openTag(event, 'share')"
             >
-              More info
+              Easy Sharing
             </button>
-            <!-- Same type of button as the chrome one. Reused because it doesn't have any function. -->
           </div>
-        </div>
-        <!-- Tab 2-->
-        <div id="intelligent" class="tab-content">
-          <!-- Contenedor de toda la info de las características. -->
-          <div class="div-illustration">
-            <img
-              src="https://github.com/alexgesti/html-css/blob/main/Imagenes/illustration-features-tab-2.svg?raw=true"
-              class="img-illustration2"
-            />
-            <div class="figure"></div>
-            <!-- Fondo azul, hecho con flex. -->
-          </div>
-          <div class="div-tab-info">
-            <h2>Intelligent search</h2>
-            <p>
-              Our powerful search feature will help you find saved sites in no
-              time at all. No need to trawl through all of your bookmarks.
-            </p>
-            <button class="button-chromep1" type="button">More info</button>
-            <!-- Same type of button as the chrome one. Reused because it doesn't have any function. -->
-          </div>
-        </div>
-        <!-- Tab 3-->
-        <div id="share" class="tab-content">
-          <!-- Contenedor de toda la info de las características. -->
-          <div class="div-illustration">
-            <img
-              src="https://github.com/alexgesti/html-css/blob/main/Imagenes/illustration-features-tab-3.svg?raw=true"
-              class="img-illustration2"
-            />
-            <div class="figure"></div>
-            <!-- Fondo azul, hecho con flex. -->
-          </div>
-          <div class="div-tab-info">
-            <h2>Share your bookmarks</h2>
-            <p>
-              Easily share your bookmarks and collections with others. Create a
-              shareable link that you can send at the click of a button.
-            </p>
-            <button class="button-chromep1" type="button">More info</button>
-            <!-- Same type of button as the chrome one. Reused because it doesn't have any function. -->
-          </div>
-        </div>
-      </section>
-      <section class="section-part3">
-        <!-- "Parte 3" -->
-        <h2>Download the extension</h2>
-        <p>
-          We’ve got more browsers in the pipeline. Please do let us know if
-          you’ve got a favourite you’d like us to prioritize.
-        </p>
-        <div class="div-contenedor-extension">
-          <!-- Contenedor de chorme, firefox y opera (para tener mayor control de los espacios) -->
-          <div class="contenedor-extension">
-            <!-- Contenedor de chrome -->
-            <img
-              src="https://github.com/alexgesti/html-css/blob/main/Imagenes/logo-chrome.svg?raw=true"
-              class="img-extension"
-            />
-            <h3>Add to Chrome</h3>
-            <p>Minimum version 62</p>
-            <img
-              src="https://github.com/alexgesti/html-css/blob/main/Imagenes/bg-dots.svg?raw=true"
-              class="img-extesion-division"
-            />
-            <div>
-              <!--  Boton de extension (Chrome)  -->
-              <button class="button-part3" type="button">
-                Add & Install Extension
-              </button>
-            </div>
-          </div>
-          <div class="contenedor-extension">
-            <!-- Contenedor de firefox -->
-            <img
-              src="https://github.com/alexgesti/html-css/blob/main/Imagenes/logo-firefox.svg?raw=true"
-              class="img-extension"
-            />
-            <h3>Add to Firefox</h3>
-            <p>Minimum version 55</p>
-            <img
-              src="https://github.com/alexgesti/html-css/blob/main/Imagenes/bg-dots.svg?raw=true"
-              class="img-extesion-division"
-            />
-            <div>
-              <!-- Boton de extension (Firefox) -->
-              <button class="button-part3" type="button">
-                Add & Install Extension
-              </button>
-            </div>
-          </div>
-          <div class="contenedor-extension">
-            <!-- Contenedor de opera -->
-            <img
-              src="https://github.com/alexgesti/html-css/blob/main/Imagenes/logo-opera.svg?raw=true"
-              class="img-extension"
-            />
-            <h3>Add to Opera</h3>
-            <p>Minimum version 46</p>
-            <img
-              src="https://github.com/alexgesti/html-css/blob/main/Imagenes/bg-dots.svg?raw=true"
-              class="img-extesion-division"
-            />
-            <div>
-              <!-- Boton de extension (Opera) -->
-              <button class="button-part3" type="button">
-                Add & Install Extension
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-part4">
-        <!-- "Parte 4" -->
-        <h2>Frequently Asked Question</h2>
-        <p>
-          Here are some of our FAQs. If you have any other questions you’d like
-          answered please feel free to email us.
-        </p>
-        <div>
-          <!-- Contenedor de preguntas -->
-          <details class="details-part4">
-            <summary class="summary-part4">What is Bookmark?</summary>
-            <p class="p-part4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </details>
-          <details class="details-part4">
-            <summary class="summary-part4">
-              How can I request a new browser?
-            </summary>
-            <p class="p-part4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </details>
-          <details class="details-part4">
-            <summary class="summary-part4">Is there a mobile app?</summary>
-            <p class="p-part4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </details>
-          <details class="details-part4">
-            <summary class="summary-part4">
-              What about other Chromium browsers?
-            </summary>
-            <p class="p-part4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </details>
-        </div>
-        <button class="button-part4" type="button">More info</button>
-      </section>
-    </main>
-    <footer>
-      <!-- Pie de pagina -->
-      <section class="section-contact">
-        <!-- Contenedor de "estar en contacto" -->
-        <h3 class="h3-footer">35.000+ ALREADY JOINED</h3>
-        <h2 class="h2-footer">Stay up-to-date with what we’re doing</h2>
-        <div class="div-email-button">
-          <div class="div-email">
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              class="input-email-footer"
-              id="email-input"
-              aria-label="Email address"
-            />
-            <img
-              src="https://github.com/alexgesti/1.1-HTML-i-CSS-amb-Flex/blob/main/Imagenes/icon-error.svg?raw=true"
-              id="img-error-footer"
-              class="img-error-footer"
-            />
-            <div id="email-error" class="email-error">
-              Whoops, make sure it’s an email
-            </div>
-          </div>
-          <button class="button-contact" type="button">Contact Us</button>
-        </div>
-      </section>
-      <section class="section-links">
-        <!-- Links -->
-        <img
-          src="https://github.com/alexgesti/html-css/blob/main/Imagenes/logo-bookmark-white.svg?raw=true"
-          class="img-logofooter"
-        />
-        <div class="div-button-footer">
-          <button
-            class="button-footer"
-            type="button"
-            aria-label="Go to Features section"
-          >
-            FEATURES
-          </button>
-          <button
-            class="button-footer"
-            type="button"
-            aria-label="Go to Pricing section"
-          >
-            PRICING
-          </button>
-          <button
-            class="button-footer"
-            type="button"
-            aria-label="Go to Contact section"
-          >
-            CONTACT
-          </button>
-        </div>
-        <!-- Redes sociales -->
-        <ul class="ul-sociallinks">
-          <li>
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              aria-label="Visit Facebook"
-            >
+          <!-- Tabs content -->
+          <!-- Tab 1-->
+          <div id="bookmarks" class="tab-content">
+            <!-- Contenedor de toda la info de las características. -->
+            <div class="div-illustration">
               <img
-                src="https://github.com/alexgesti/html-css/blob/main/Imagenes/icon-facebook.svg?raw=true"
-                class="img-sociallinks"
+                src="https://github.com/alexgesti/html-css/blob/main/Imagenes/illustration-features-tab-1.svg?raw=true"
+                class="img-illustration2"
               />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              aria-label="Visit Twitter"
-            >
+              <div class="figure"></div>
+              <!-- Fondo azul, hecho con flex. -->
+            </div>
+            <div class="div-tab-info">
+              <h2>Bookmark in one click</h2>
+              <p>
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+              <button
+                class="button-chromep1"
+                type="button"
+                aria-label="More information about Easy Sharing"
+              >
+                More info
+              </button>
+              <!-- Same type of button as the chrome one. Reused because it doesn't have any function. -->
+            </div>
+          </div>
+          <!-- Tab 2-->
+          <div id="intelligent" class="tab-content">
+            <!-- Contenedor de toda la info de las características. -->
+            <div class="div-illustration">
               <img
-                src="https://github.com/alexgesti/html-css/blob/main/Imagenes/icon-twitter.svg?raw=true"
-                class="img-sociallinks"
+                src="https://github.com/alexgesti/html-css/blob/main/Imagenes/illustration-features-tab-2.svg?raw=true"
+                class="img-illustration2"
               />
-            </a>
-          </li>
-        </ul>
-      </section>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-      crossorigin="anonymous"
-    ></script>
+              <div class="figure"></div>
+              <!-- Fondo azul, hecho con flex. -->
+            </div>
+            <div class="div-tab-info">
+              <h2>Intelligent search</h2>
+              <p>
+                Our powerful search feature will help you find saved sites in no
+                time at all. No need to trawl through all of your bookmarks.
+              </p>
+              <button class="button-chromep1" type="button">More info</button>
+              <!-- Same type of button as the chrome one. Reused because it doesn't have any function. -->
+            </div>
+          </div>
+          <!-- Tab 3-->
+          <div id="share" class="tab-content">
+            <!-- Contenedor de toda la info de las características. -->
+            <div class="div-illustration">
+              <img
+                src="https://github.com/alexgesti/html-css/blob/main/Imagenes/illustration-features-tab-3.svg?raw=true"
+                class="img-illustration2"
+              />
+              <div class="figure"></div>
+              <!-- Fondo azul, hecho con flex. -->
+            </div>
+            <div class="div-tab-info">
+              <h2>Share your bookmarks</h2>
+              <p>
+                Easily share your bookmarks and collections with others. Create
+                a shareable link that you can send at the click of a button.
+              </p>
+              <button class="button-chromep1" type="button">More info</button>
+              <!-- Same type of button as the chrome one. Reused because it doesn't have any function. -->
+            </div>
+          </div>
+        </section>
+        <section class="section-part3">
+          <!-- "Parte 3" -->
+          <h2>Download the extension</h2>
+          <p>
+            We’ve got more browsers in the pipeline. Please do let us know if
+            you’ve got a favourite you’d like us to prioritize.
+          </p>
+          <div class="div-contenedor-extension">
+            <!-- Contenedor de chorme, firefox y opera (para tener mayor control de los espacios) -->
+            <div class="contenedor-extension">
+              <!-- Contenedor de chrome -->
+              <img
+                src="https://github.com/alexgesti/html-css/blob/main/Imagenes/logo-chrome.svg?raw=true"
+                class="img-extension"
+              />
+              <h3>Add to Chrome</h3>
+              <p>Minimum version 62</p>
+              <img
+                src="https://github.com/alexgesti/html-css/blob/main/Imagenes/bg-dots.svg?raw=true"
+                class="img-extesion-division"
+              />
+              <div>
+                <!--  Boton de extension (Chrome)  -->
+                <button class="button-part3" type="button">
+                  Add & Install Extension
+                </button>
+              </div>
+            </div>
+            <div class="contenedor-extension">
+              <!-- Contenedor de firefox -->
+              <img
+                src="https://github.com/alexgesti/html-css/blob/main/Imagenes/logo-firefox.svg?raw=true"
+                class="img-extension"
+              />
+              <h3>Add to Firefox</h3>
+              <p>Minimum version 55</p>
+              <img
+                src="https://github.com/alexgesti/html-css/blob/main/Imagenes/bg-dots.svg?raw=true"
+                class="img-extesion-division"
+              />
+              <div>
+                <!-- Boton de extension (Firefox) -->
+                <button class="button-part3" type="button">
+                  Add & Install Extension
+                </button>
+              </div>
+            </div>
+            <div class="contenedor-extension">
+              <!-- Contenedor de opera -->
+              <img
+                src="https://github.com/alexgesti/html-css/blob/main/Imagenes/logo-opera.svg?raw=true"
+                class="img-extension"
+              />
+              <h3>Add to Opera</h3>
+              <p>Minimum version 46</p>
+              <img
+                src="https://github.com/alexgesti/html-css/blob/main/Imagenes/bg-dots.svg?raw=true"
+                class="img-extesion-division"
+              />
+              <div>
+                <!-- Boton de extension (Opera) -->
+                <button class="button-part3" type="button">
+                  Add & Install Extension
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-part4">
+          <!-- "Parte 4" -->
+          <h2>Frequently Asked Question</h2>
+          <p>
+            Here are some of our FAQs. If you have any other questions you’d
+            like answered please feel free to email us.
+          </p>
+          <div>
+            <!-- Contenedor de preguntas -->
+            <details class="details-part4">
+              <summary class="summary-part4">What is Bookmark?</summary>
+              <p class="p-part4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </details>
+            <details class="details-part4">
+              <summary class="summary-part4">
+                How can I request a new browser?
+              </summary>
+              <p class="p-part4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </details>
+            <details class="details-part4">
+              <summary class="summary-part4">Is there a mobile app?</summary>
+              <p class="p-part4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </details>
+            <details class="details-part4">
+              <summary class="summary-part4">
+                What about other Chromium browsers?
+              </summary>
+              <p class="p-part4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </details>
+          </div>
+          <button class="button-part4" type="button">More info</button>
+        </section>
+      </main>
+      <footer>
+        <!-- Pie de pagina -->
+        <section class="section-contact">
+          <!-- Contenedor de "estar en contacto" -->
+          <h3 class="h3-footer">35.000+ ALREADY JOINED</h3>
+          <h2 class="h2-footer">Stay up-to-date with what we’re doing</h2>
+          <div class="div-email-button">
+            <div class="div-email">
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                class="input-email-footer"
+                id="email-input"
+                aria-label="Email address"
+              />
+              <img
+                src="https://github.com/alexgesti/1.1-HTML-i-CSS-amb-Flex/blob/main/Imagenes/icon-error.svg?raw=true"
+                id="img-error-footer"
+                class="img-error-footer"
+              />
+              <div id="email-error" class="email-error">
+                Whoops, make sure it’s an email
+              </div>
+            </div>
+            <button class="button-contact" type="button">Contact Us</button>
+          </div>
+        </section>
+        <section class="section-links">
+          <!-- Links -->
+          <img
+            src="https://github.com/alexgesti/html-css/blob/main/Imagenes/logo-bookmark-white.svg?raw=true"
+            class="img-logofooter"
+          />
+          <div class="div-button-footer">
+            <button
+              class="button-footer"
+              type="button"
+              aria-label="Go to Features section"
+            >
+              FEATURES
+            </button>
+            <button
+              class="button-footer"
+              type="button"
+              aria-label="Go to Pricing section"
+            >
+              PRICING
+            </button>
+            <button
+              class="button-footer"
+              type="button"
+              aria-label="Go to Contact section"
+            >
+              CONTACT
+            </button>
+          </div>
+          <!-- Redes sociales -->
+          <ul class="ul-sociallinks">
+            <li>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                aria-label="Visit Facebook"
+              >
+                <img
+                  src="https://github.com/alexgesti/html-css/blob/main/Imagenes/icon-facebook.svg?raw=true"
+                  class="img-sociallinks"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                aria-label="Visit Twitter"
+              >
+                <img
+                  src="https://github.com/alexgesti/html-css/blob/main/Imagenes/icon-twitter.svg?raw=true"
+                  class="img-sociallinks"
+                />
+              </a>
+            </li>
+          </ul>
+        </section>
+      </footer>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"
+      ></script>
+    </div>
   </body>
 </html>

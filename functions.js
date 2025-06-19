@@ -32,13 +32,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Handles the menu button click to show the dropdown menu
-  const menuBtn = document.querySelector(".button-header");
-  const dropdown = document.getElementById("dropdown-menu");
-  if (menuBtn && dropdown) {
-    menuBtn.addEventListener("click", function () {
-      dropdown.classList.add("active");
-    });
-  }
+  const menuToggle = document.getElementById("menu-toggle");
+  const menuClose = document.getElementById("menu-close");
+  const dropdown = document.querySelector(".dropdown-menu-custom");
+
+  menuToggle.addEventListener("click", () => {
+    dropdown.classList.add("active");
+  });
+
+  menuClose.addEventListener("click", () => {
+    dropdown.classList.remove("active");
+  });
 });
 
 // Tabs fuction.
@@ -75,12 +79,4 @@ function setTabDirection(tab) {
   if (window.matchMedia("(min-width: 1024px)").matches)
     tab.style.flexDirection = "row";
   else tab.style.flexDirection = "column";
-}
-
-// Close the dropdown menu when clicking in the X
-function closeMenu() {
-  const dropdown = document.getElementById("dropdown-menu");
-  if (dropdown) {
-    dropdown.classList.remove("active");
-  }
 }
