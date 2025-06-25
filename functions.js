@@ -32,17 +32,20 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Handles the menu button click to show the dropdown menu
-  const menuToggle = document.getElementById("menu-toggle");
-  const menuClose = document.getElementById("menu-close");
+  const menuBtn = document.querySelector(".button-header");
+  const closeBtn = document.querySelector(".dropdown-close");
   const dropdown = document.querySelector(".dropdown-menu-custom");
 
-  menuToggle.addEventListener("click", () => {
-    dropdown.classList.add("active");
-  });
-
-  menuClose.addEventListener("click", () => {
-    dropdown.classList.remove("active");
-  });
+  if (menuBtn && dropdown) {
+    menuBtn.addEventListener("click", function () {
+      dropdown.classList.add("active");
+    });
+  }
+  if (closeBtn && dropdown) {
+    closeBtn.addEventListener("click", function () {
+      dropdown.classList.remove("active");
+    });
+  }
 });
 
 // Tabs fuction.
