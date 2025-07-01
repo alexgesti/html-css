@@ -5,37 +5,12 @@ h1,
 h2,
 h3 {
   font-family: "crique grotesque", sans-serif;
-  font-weight: 600;
   letter-spacing: 0.1vw;
-  line-height: 10vw;
-  color: #242841;
-  text-align: center;
-}
-
-h1 {
-  font-size: 7.5vw;
-  margin: 5% 10%;
-}
-
-h2 {
-  font-size: 6.5vw;
-  line-height: 8vw;
-  margin: 4.5% 10%;
-}
-
-h3 {
-  font-size: 5.25vw;
 }
 
 p {
   font-family: "crique grotesque", sans-serif;
-  font-weight: 500;
-  font-size: 3.75vw;
   letter-spacing: 0.15vw;
-  line-height: 6vw;
-  color: #a3a4a8;
-  text-align: center;
-  margin: 0 10%;
 }
 
 /* Botones base */
@@ -45,45 +20,14 @@ p {
 .button-contact {
   background-color: #4d61d1;
   border: solid #4d61d1;
-  cursor: pointer;
-  border-radius: 5px;
-  box-shadow: 0 1px 5px rgb(220, 220, 220);
   font-family: "crique grotesque", sans-serif;
-  font-weight: 550;
   font-size: 3.5vw;
-  color: white;
-  text-align: center;
-}
-
-body {
-  width: 100%;
-  background-color: white;
-}
-
-footer {
-  width: 100%;
 }
 
 /* Header styles 
     This is the header of the page, which contains the logo and navigation menu. */
 header {
-  flex-direction: row;
-  justify-content: space-between;
-  width: 80%;
-  margin-top: 12%;
-  margin-bottom: 20%;
   /* Header dropdown*/
-}
-header .img-logo {
-  width: 50%;
-  max-width: 180px;
-  margin: 0 3.5%;
-}
-header .button-header {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  margin: 0 5%;
 }
 header .img-hamburger {
   height: 65%;
@@ -98,7 +42,6 @@ header .dropdown-menu-custom.active {
   display: flex;
 }
 header .dropdown-menu-custom .img-logo-dropdown {
-  position: absolute;
   top: clamp(35.2px, 11vw, 45.1px);
   left: 10vw;
   width: 40vw;
@@ -109,12 +52,9 @@ header .dropdown-menu-custom .img-logo-dropdown {
   max-height: 28px;
 }
 header .dropdown-menu-custom .dropdown-close {
-  position: absolute;
   top: clamp(38.4px, 12vw, 49.2px);
   right: 10vw;
-  justify-content: center;
   background: none;
-  border: none;
   cursor: pointer;
 }
 header .dropdown-menu-custom .dropdown-close:hover, header .dropdown-menu-custom .dropdown-close:active {
@@ -188,17 +128,11 @@ header .dropdown-menu-custom .ul-sociallinks-header .img-sociallinks-header:hove
 /* Parte 1 styles
     This is the first part of the page which contains the illustration and the "Bookmark Manager" text. */
 .section-part1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
 }
 
 .div-illustration {
-  display: flex;
-  justify-content: center;
   margin-bottom: 10%;
-  position: relative;
 }
 
 .img-illustration {
@@ -206,55 +140,35 @@ header .dropdown-menu-custom .ul-sociallinks-header .img-sociallinks-header:hove
 }
 
 .figure {
-  background-color: var(#4d61d1);
+  background-color: #4d61d1;
   width: 70vw;
   height: 75%;
-  left: 29%;
+  left: 30%;
   top: 30%;
   border-bottom-left-radius: 30%;
   z-index: -1;
-  position: absolute;
-}
-
-.div-text-part1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .div-button-part1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   width: 85%;
-  margin: 10% auto;
-  margin-top: 10%;
-  margin-bottom: 25%;
-}
-
-.button-chromep1 {
-  width: 42.5%;
-  height: 195%;
+  margin: 10% auto 25% auto;
 }
 
 .button-chromep1:active,
 .button-chromep1:hover {
   background-color: white;
-  color: var(#4d61d1);
+  color: #4d61d1;
 }
 
 .button-firefoxp1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 42.5%;
-  height: 195%;
+  height: 12.5vw;
   background-color: #f7f7f7;
   border: solid #f7f7f7;
   cursor: pointer;
   border-radius: 5px;
   box-shadow: 0 1px 5px rgb(220, 220, 220);
-  font-family: var("crique grotesque", sans-serif);
+  font-family: "crique grotesque", sans-serif;
   font-weight: 550;
   font-size: 3.5vw;
   color: rgb(132, 132, 132);
@@ -271,10 +185,6 @@ header .dropdown-menu-custom .ul-sociallinks-header .img-sociallinks-header:hove
 /* Parte 2 styles
     This is the second part which contains the part of "features". */
 .section-part2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 25%;
 }
 
@@ -303,30 +213,19 @@ header .dropdown-menu-custom .ul-sociallinks-header .img-sociallinks-header:hove
 }
 
 .div-buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 80%;
   margin-top: 10%;
 }
 
 .button-part2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
   height: 4em;
-  background-color: transparent;
   border: none;
   border-bottom: solid 1px rgb(192, 192, 192);
   cursor: pointer;
-  font-family: var("crique grotesque", sans-serif);
+  font-family: "crique grotesque", sans-serif;
   font-size: 4.25vw;
   font-weight: 550;
   color: rgb(132, 132, 132);
-  text-align: center;
 }
 
 .button-part2:first-child {
@@ -334,12 +233,12 @@ header .dropdown-menu-custom .ul-sociallinks-header .img-sociallinks-header:hove
 }
 
 .button-part2:hover {
-  color: var(#fdaf90);
+  color: #fdaf90;
 }
 
 .button-part2.active {
   position: relative;
-  color: var(#fdaf90);
+  color: #fdaf90;
   background-color: transparent;
 }
 
@@ -350,7 +249,7 @@ header .dropdown-menu-custom .ul-sociallinks-header .img-sociallinks-header:hove
   right: 27.5%;
   bottom: 0;
   height: 4px;
-  background: var(#fdaf90);
+  background: #fdaf90;
 }
 
 .tab-content .button-chromep1 {
@@ -360,73 +259,25 @@ header .dropdown-menu-custom .ul-sociallinks-header .img-sociallinks-header:hove
 /* Parte 3 styles
     This is the third part which contains a link to download the extension. (Not included in the final project) */
 .section-part3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 35%;
 }
 
-.div-contenedor-extension {
-  display: flex;
-  flex-direction: column;
-}
-
 .contenedor-extension {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20%;
-  width: 80vw;
   max-width: 500px;
   height: 100%;
   border-radius: 5%;
   box-shadow: 0 10px 20px rgb(220, 220, 220);
 }
 
-.img-extension {
-  width: 30%;
-  margin-top: 10%;
-  margin-bottom: 5%;
-}
-
-.img-extesion-division {
-  width: 100%;
-  margin-top: 7.5%;
-  margin-bottom: 10%;
-}
-
-.button-part3 {
-  width: 70vw;
-  min-width: 100px;
-  max-width: 400px;
-  height: 8vw;
-  min-height: 36px;
-  max-height: 60px;
-  margin: 0 auto;
-  margin-bottom: 10%;
-  font-size: clamp(1rem, 3.5vw, 1.5rem);
-}
-
 .button-part3:active,
 .button-part3:hover {
   background-color: white;
-  color: var(#4d61d1);
+  color: #4d61d1;
 }
 
 /* Parte 4 styles
     This is the forth part which contains FAQs about the app. */
-.section-part4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10%;
-}
-
-.section-part4 > div {
-  width: 100%;
+.div-p4 {
   box-sizing: border-box;
   padding: 0 7.5%;
 }
@@ -441,29 +292,17 @@ details > summary {
 }
 
 .details-part4 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   box-sizing: border-box;
-  width: 100%;
-  margin: 10% 0;
-  padding-bottom: 7.5%;
   border-bottom: solid 1px rgb(192, 192, 192);
 }
 
 .summary-part4 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
   box-sizing: border-box;
-  font-family: var("crique grotesque", sans-serif);
+  font-family: "crique grotesque", sans-serif;
   font-weight: 550;
   font-size: 3.75vw;
   color: rgb(62, 62, 62);
   letter-spacing: 0.1vw;
-  text-align: left;
-  cursor: pointer;
 }
 
 .summary-part4::after {
@@ -487,90 +326,26 @@ details > summary {
 }
 
 .p-part4 {
-  font-family: var("crique grotesque", sans-serif);
-  font-weight: 500;
-  font-size: 3.75vw;
+  font-family: "crique grotesque", sans-serif;
   letter-spacing: 0.1vw;
   line-height: 7vw;
-  color: gray;
-  text-align: left;
-  margin: 7.5% 0;
-  padding: 0;
-}
-
-.button-part4 {
-  width: 30vw;
-  min-width: 100px;
-  max-width: 300px;
-  height: 8vw;
-  min-height: 36px;
-  max-height: 60px;
-  margin-top: 10%;
-  margin-bottom: 20%;
-  letter-spacing: 0.1vw;
 }
 
 .button-part4:active,
 .button-part4:hover {
   background-color: white;
-  color: var(#4d61d1);
+  color: #4d61d1;
 }
 
 /* Footer styles 
     This is the footer/end of the page, where you can send your email adress to stay in contact, go quickly to one of the sections of the page or visit one of the social webs of the company. */
 .section-contact {
   /* Contact section */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: var(#4d61d1);
-}
-
-.h3-footer {
-  font-weight: 550;
-  font-size: 3.5vw;
-  letter-spacing: 1vw;
-  color: white;
-  margin-top: 15%;
-}
-
-.h2-footer {
-  width: 100%;
-  letter-spacing: 0.2vw;
-  color: white;
-  margin-top: 0%;
-  margin-bottom: 7.5%;
-}
-
-.div-email-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.div-email {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 85vw;
-  min-width: 180px;
-  max-width: 500px;
-  margin-bottom: 2.5%;
-  position: relative;
+  background-color: #4d61d1;
 }
 
 .input-email-footer {
-  width: 100%;
-  box-sizing: border-box;
-  height: 10vw;
-  border-radius: 7.5px;
-  font-family: var("crique grotesque", sans-serif);
-  font-size: 2.5vw;
-  padding-left: 1em;
+  font-family: "crique grotesque", sans-serif;
 }
 
 .input-email-footer.error {
@@ -581,49 +356,23 @@ details > summary {
 
 .img-error-footer {
   display: none;
-  width: auto;
-  height: 5vw;
   top: 25%;
   transform: translateY(-25%);
   right: 3.5%;
-  position: absolute;
 }
 
 .email-error {
   display: none;
-  align-items: center;
-  width: 100%;
-  box-sizing: border-box;
-  color: white;
   background-color: rgb(255, 101, 83);
   border-bottom-left-radius: 7.5px;
   border-bottom-right-radius: 7.5px;
-  margin-top: -0.1em;
-  font-family: var("crique grotesque", sans-serif);
-  font-style: italic;
-  font-size: 0.75rem;
+  font-family: "crique grotesque", sans-serif;
   letter-spacing: 0.1vw;
-  text-align: left;
-  padding-top: 1%;
-  padding-bottom: 2%;
-  padding-left: 2.5%;
 }
 
 .button-contact {
-  width: 85vw;
-  min-width: 180px;
-  max-width: 500px;
-  height: 14vw;
-  min-height: 40px;
-  max-height: 70px;
-  margin-top: 2.5%;
-  margin-bottom: 10%;
   background-color: rgb(255, 101, 83);
   border: solid rgb(255, 101, 83);
-  border-radius: 7.5px;
-  box-shadow: none;
-  font-weight: 550;
-  font-size: 4vw;
   letter-spacing: 0.25vw;
 }
 
@@ -635,58 +384,22 @@ details > summary {
 
 .section-links {
   /* Links section */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   background-color: rgb(39, 39, 76);
 }
 
-.img-logofooter {
-  width: 40%;
-  margin-top: 10%;
-}
-
-.div-button-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 5% 0;
-}
-
 .button-footer {
-  display: flex;
   width: -moz-fit-content;
   width: fit-content;
-  background: none;
-  border: none;
-  font-family: var("crique grotesque", sans-serif);
+  font-family: "crique grotesque", sans-serif;
   font-weight: 500;
   font-size: 3.75vw;
   letter-spacing: 0.5vw;
-  color: white;
-  cursor: pointer;
-  margin: 15% 0;
 }
 
 .button-footer:active,
 .button-footer:hover {
-  color: var(#fdaf90);
+  color: #fdaf90;
   outline: none;
-}
-
-.ul-sociallinks {
-  display: flex;
-  flex-direction: row;
-  gap: 12.5vw;
-  margin-bottom: 10%;
-}
-
-.img-sociallinks {
-  width: 5.5vw;
-  height: 5vw;
 }
 
 .ul-sociallinks a:active .img-sociallinks,
@@ -799,13 +512,6 @@ details > summary {
     text-align: left;
     padding-left: 12.5%;
   }
-  .div-text-part1 p {
-    font-size: 1.5vw;
-    line-height: 2.5vw;
-    margin: 0% 0%;
-    text-align: left;
-    padding-left: 12.5%;
-  }
   .div-button-part1 {
     justify-content: left;
     margin: auto;
@@ -826,12 +532,6 @@ details > summary {
     line-height: 0;
     margin: 0;
     margin-bottom: 3.5%;
-    text-align: center;
-  }
-  .section-part2 p {
-    font-size: 1.5vw;
-    line-height: 2.25vw;
-    margin: 0% 30%;
     text-align: center;
   }
   .div-buttons {
@@ -865,13 +565,6 @@ details > summary {
     margin-bottom: 5.5%;
     text-align: left;
   }
-  .tab-content p {
-    font-size: 1.5vw;
-    line-height: 2.25vw;
-    margin: 0%;
-    margin-right: 20%;
-    text-align: left;
-  }
   .section-part2 .div-illustration {
     display: flex;
     flex-direction: row;
@@ -899,12 +592,6 @@ details > summary {
     margin-bottom: 3.5%;
     text-align: center;
   }
-  .section-part3 p {
-    font-size: 1.5vw;
-    line-height: 2.25vw;
-    margin: 0% 25%;
-    text-align: center;
-  }
   .div-contenedor-extension {
     display: flex;
     flex-direction: row;
@@ -925,11 +612,6 @@ details > summary {
     font-size: 1.75vw;
     line-height: 2.5vw;
   }
-  .contenedor-extension p {
-    font-size: 1vw;
-    line-height: 2.25vw;
-    white-space: nowrap;
-  }
   .button-part3 {
     width: 15vw;
     height: 4vw;
@@ -944,12 +626,6 @@ details > summary {
     line-height: 0;
     margin: 0;
     margin-bottom: 4%;
-    text-align: center;
-  }
-  .section-part4 > p {
-    font-size: 1.5vw;
-    line-height: 2.25vw;
-    margin: 0% 25%;
     text-align: center;
   }
   .details-part4 {
