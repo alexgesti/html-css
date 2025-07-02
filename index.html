@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <!-- NO USAR IMPORTANT -->
   <body class="d-flex flex-column w-100 bg-white align-items-center bg-white">
     <div class="container-fluid p-0">
       <header
@@ -22,7 +21,7 @@
         <!-- Encabezado -->
         <img
           src="https://github.com/alexgesti/html-css/blob/main/Imagenes/logo-bookmark.svg?raw=true"
-          class="img-fluid w-50 mb-2"
+          class="img-fluid w-50"
         />
         <button
           class="button-header bg-transparent border-0 cursor-pointer mx-3"
@@ -32,57 +31,57 @@
           <!-- Boton de menu -->
           <img
             src="https://github.com/alexgesti/html-css/blob/main/Imagenes/icon-hamburger.svg?raw=true"
-            class="img-hamburger"
+            class="h-75"
             alt=""
           />
         </button>
         <!-- Menú desplegable -->
         <div
-          class="dropdown-menu-custom flex-column align-items-center justify-content-start position-fixed top-0 start-0 w-100 h-100"
+          class="dropdown-menu-custom flex-column align-items-center justify-content-start position-fixed top-0 start-0 w-100 h-100 z-2"
         >
           <img
             src="https://github.com/alexgesti/1.1-html-i-css-amb-flex/blob/bootstrap-and-sass/Imagenes/logo-bookmark-fullwhite.svg?raw=true"
-            class="img-logo-dropdown position-absolute"
+            class="img-logo-dropdown w-50 position-absolute"
           />
 
           <button
-            class="dropdown-close position-absolute justify-content-center border-0"
+            class="dropdown-close position-absolute justify-content-center border-0 bg-transparent"
             id="menu-close"
             aria-label="Close menu"
           >
             <img
               src="https://github.com/alexgesti/1.1-HTML-i-CSS-amb-Flex/blob/main/Imagenes/icon-close.svg?raw=true"
-              class="img-cross"
+              class="w-100 h-100"
             />
           </button>
 
           <!-- Links -->
           <div
-            class="d-flex flex-column justify-content-center align-items-center mt-5 div-buttons-header"
+            class="d-flex flex-column w-75 justify-content-center align-items-center mt-5 div-buttons-header"
           >
             <button
-              class="button-header-og"
+              class="button-header-og flex-column justify-content-center w-100 p-3 border-0 border-top border-bottom mt-5 cursor-pointer fs-6 fw-medium text-center"
               type="button"
               aria-label="Go to Features section"
             >
               FEATURES
             </button>
             <button
-              class="button-header-og"
+              class="button-header-og flex-column justify-content-center w-100 p-3 border-0 border-bottom cursor-pointer fs-6 fw-medium text-center"
               type="button"
               aria-label="Go to Pricing section"
             >
               PRICING
             </button>
             <button
-              class="button-header-og"
+              class="button-header-og flex-column justify-content-center w-100 p-3 border-0 border-bottom cursor-pointer fs-6 fw-medium text-center"
               type="button"
               aria-label="Go to Contact section"
             >
               CONTACT
             </button>
             <button
-              class="button-header-og"
+              class="button-header-og flex-column justify-content-center w-100 p-3 border rounded-2 mt-3 cursor-pointer fs-6 fw-semibold text-center"
               type="button"
               aria-label="Go to Login section"
             >
@@ -92,7 +91,7 @@
 
           <!-- Redes sociales -->
           <ul
-            class="ul-sociallinks-header d-flex flex-row justify-content-center align-items-center position-absolute"
+            class="d-flex flex-row w-100 bottom-0 start-0 gap-5 mb-3 justify-content-center align-items-center position-absolute"
           >
             <li>
               <a
@@ -102,7 +101,7 @@
               >
                 <img
                   src="https://github.com/alexgesti/html-css/blob/main/Imagenes/icon-facebook.svg?raw=true"
-                  class="img-sociallinks-header"
+                  class="w-100 h-100 img-sociallinks-header"
                 />
               </a>
             </li>
@@ -114,7 +113,7 @@
               >
                 <img
                   src="https://github.com/alexgesti/html-css/blob/main/Imagenes/icon-twitter.svg?raw=true"
-                  class="img-sociallinks-header"
+                  class="w-100 h-100 img-sociallinks-header"
                 />
               </a>
             </li>
@@ -123,21 +122,25 @@
       </header>
       <main>
         <!-- Contenido principal -->
-        <section class="d-flex flex-column flex-lg-row-reverse">
+        <section class="d-flex flex-column flex-lg-row-reverse flex-wrap">
           <!-- "Parte 1" -->
           <div
-            class="div-illustration d-flex justify-content-center position-relative"
+            class="div-illustration d-flex justify-content-center position-relative mb-3"
           >
             <img
               src="https://github.com/alexgesti/html-css/blob/main/Imagenes/illustration-hero.svg?raw=true"
-              class="img-illustration"
+              class="w-100 z-1"
             />
-            <div class="figure position-absolute"></div>
+            <div
+              class="backgroundBlue translateYDown w-50 h-75 start-50 rounded-start-5 position-absolute"
+            ></div>
             <!-- Fondo azul, hecho con flex. -->
           </div>
-          <div class="div-text-part1 d-flex flex-column justify-content-center">
+          <div
+            class="div-text-part1 d-flex flex-column justify-content-center w-100 mt-2 mb-5 mx-auto"
+          >
             <h1
-              class="lh-base fs-1 my-2 mx-4 fw-semibold text-black text-center"
+              class="lh-base fs-1 my-2 mx-4 fw-semibold text-black text-center z-1"
             >
               A Simple Bookmark Manager
             </h1>
@@ -149,18 +152,18 @@
               for free.
             </p>
             <div
-              class="div-button-part1 d-flex flex-row justify-content-around align-items-center flex-grow-1"
+              class="div-button-part1 d-flex flex-row justify-content-center align-items-center flex-grow-1 mt-3 gap-3"
             >
               <!-- "Botones" para obtenerlo en chrome o firefox. -->
               <button
-                class="button-chromep1 w-50 py-3 cursor-pointer rounded-2 shadow fw-semibold text-white text-center"
+                class="button-chromep1 d-flex align-items-center justify-content-center w-35 py-3 px-3 fs-7 cursor-pointer rounded-2 shadow fw-semibold text-center"
                 type="button"
                 aria-label="More information about Bookmarking on Chrome"
               >
                 Get it on Chrome
               </button>
               <button
-                class="button-firefoxp1 d-flex align-items-center justify-content-center"
+                class="button-firefoxp1 d-flex align-items-center justify-content-center w-35 py-3 px-3 fs-7 cursor-pointer rounded-2 shadow fw-semibold text-secondary text-center"
                 type="button"
                 aria-label="More information about Bookmarking on Firefox"
               >
@@ -170,7 +173,7 @@
           </div>
         </section>
         <section
-          class="section-part2 d-flex flex-column justify-content-center align-items-center"
+          class="d-flex flex-column justify-content-center align-items-center mb-4"
         >
           <!-- "Parte 2" -->
           <h2 class="lh-base fs-3 my-2 mx-4 fw-semibold text-black text-center">
@@ -183,24 +186,24 @@
           </p>
           <!-- Tab links -->
           <div
-            class="div-buttons d-flex flex-column justify-content-center align-items-center"
+            class="d-flex flex-column justify-content-center align-items-center w-75 my-3"
           >
             <button
-              class="button-part2 d-flex flex-column align-items-center justify-content-center bg-transparent text-center w-100"
+              class="button-part2 d-flex flex-column w-100 py-3 align-items-center justify-content-center bg-transparent border-0 border-top border-bottom cursor-pointer fw-semibold text-center"
               type="button"
               onclick="openTag(event, 'bookmarks')"
             >
               Simple Bookmarking
             </button>
             <button
-              class="button-part2 d-flex flex-column align-items-center justify-content-center bg-transparent text-center w-100"
+              class="button-part2 d-flex flex-column w-100 py-3 align-items-center justify-content-center bg-transparent border-0 border-top-0 border-bottom cursor-pointer fw-semibold text-center"
               type="button"
               onclick="openTag(event, 'intelligent')"
             >
               Speedy Searching
             </button>
             <button
-              class="button-part2 d-flex flex-column align-items-center justify-content-center bg-transparent text-center w-100"
+              class="button-part2 d-flex flex-column w-100 py-3 align-items-center justify-content-center bg-transparent border-0 border-top-0 border-bottom cursor-pointer fw-semibold text-center"
               type="button"
               onclick="openTag(event, 'share')"
             >
@@ -212,30 +215,32 @@
           <div id="bookmarks" class="tab-content">
             <!-- Contenedor de toda la info de las características. -->
             <div
-              class="div-illustration d-flex justify-content-center position-relative"
+              class="d-flex justify-content-center position-relative mt-4 mb-5"
             >
               <img
                 src="https://github.com/alexgesti/html-css/blob/main/Imagenes/illustration-features-tab-1.svg?raw=true"
-                class="img-illustration2"
+                class="w-75 z-1"
               />
-              <div class="figure position-absolute"></div>
+              <div
+                class="backgroundBlue top-40 w-65 h-75 end-35 rounded-end-5 position-absolute"
+              ></div>
               <!-- Fondo azul, hecho con flex. -->
             </div>
             <div class="div-tab-info">
               <h2
-                class="lh-base fs-3 my-2 mx-4 fw-semibold text-black text-center"
+                class="lh-base fs-5 my-2 mx-4 fw-semibold text-black text-center"
               >
                 Bookmark in one click
               </h2>
               <p
-                class="lh-base fw-light fs-6 text-secondary text-center mx-3 my-2"
+                class="lh-base fw-light fs-7 text-secondary text-center mx-4 my-2"
               >
                 Organize your bookmarks however you like. Our simple
                 drag-and-drop interface gives you complete control over how you
                 manage your favourite sites.
               </p>
               <button
-                class="button-chromep1 cursor-pointer rounded-2 shadow fw-semibold text-white text-center"
+                class="button-chromep1 cursor-pointer rounded-2 shadow fw-semibold text-center"
                 type="button"
                 aria-label="More information about Easy Sharing"
               >
@@ -248,29 +253,31 @@
           <div id="intelligent" class="tab-content">
             <!-- Contenedor de toda la info de las características. -->
             <div
-              class="div-illustration d-flex justify-content-center position-relative"
+              class="d-flex justify-content-center position-relative mt-4 mb-5"
             >
               <img
                 src="https://github.com/alexgesti/html-css/blob/main/Imagenes/illustration-features-tab-2.svg?raw=true"
-                class="img-illustration2"
+                class="w-75 z-1"
               />
-              <div class="figure position-absolute"></div>
+              <div
+                class="backgroundBlue top-40 w-65 h-75 end-35 rounded-end-5 position-absolute"
+              ></div>
               <!-- Fondo azul, hecho con flex. -->
             </div>
             <div class="div-tab-info">
               <h2
-                class="lh-base fs-3 my-2 mx-4 fw-semibold text-black text-center"
+                class="lh-base fs-5 my-2 mx-4 fw-semibold text-black text-center"
               >
                 Intelligent search
               </h2>
               <p
-                class="lh-base fw-light fs-6 text-secondary text-center mx-3 my-2"
+                class="lh-base fw-light fs-7 text-secondary text-center mx-4 my-2"
               >
                 Our powerful search feature will help you find saved sites in no
                 time at all. No need to trawl through all of your bookmarks.
               </p>
               <button
-                class="button-chromep1 cursor-pointer rounded-2 shadow fw-semibold text-white text-center"
+                class="button-chromep1 cursor-pointer rounded-2 shadow fw-semibold text-center"
                 type="button"
               >
                 More info
@@ -282,29 +289,31 @@
           <div id="share" class="tab-content">
             <!-- Contenedor de toda la info de las características. -->
             <div
-              class="div-illustration d-flex justify-content-center position-relative"
+              class="d-flex justify-content-center position-relative mt-4 mb-5"
             >
               <img
                 src="https://github.com/alexgesti/html-css/blob/main/Imagenes/illustration-features-tab-3.svg?raw=true"
-                class="img-illustration2"
+                class="w-75 z-1"
               />
-              <div class="figure position-absolute"></div>
+              <div
+                class="backgroundBlue top-40 w-65 h-75 end-35 rounded-end-5 position-absolute"
+              ></div>
               <!-- Fondo azul, hecho con flex. -->
             </div>
             <div class="div-tab-info">
               <h2
-                class="lh-base fs-3 my-2 mx-4 fw-semibold text-black text-center"
+                class="lh-base fs-5 my-2 mx-4 fw-semibold text-black text-center"
               >
                 Share your bookmarks
               </h2>
               <p
-                class="lh-base fw-light fs-6 text-secondary text-center mx-3 my-2"
+                class="lh-base fw-light fs-7 text-secondary text-center mx-4 my-2"
               >
                 Easily share your bookmarks and collections with others. Create
                 a shareable link that you can send at the click of a button.
               </p>
               <button
-                class="button-chromep1 cursor-pointer rounded-2 shadow fw-semibold text-white text-center"
+                class="button-chromep1 cursor-pointer rounded-2 shadow fw-semibold text-center"
                 type="button"
               >
                 More info
@@ -314,7 +323,7 @@
           </div>
         </section>
         <section
-          class="section-part3 d-flex flex-column align-items-center justify-content-around"
+          class="d-flex flex-column align-items-center justify-content-around mb-4"
         >
           <!-- "Parte 3" -->
           <h2 class="lh-base fs-3 my-2 mx-4 fw-semibold text-black text-center">
@@ -347,7 +356,7 @@
               <div>
                 <!--  Boton de extension (Chrome)  -->
                 <button
-                  class="button-part3 fs-6 w-100 py-3 px-3 mx-auto mb-3 cursor-pointer rounded-2 shadow fw-semibold text-white text-center"
+                  class="button-part3 fs-6 w-100 py-3 px-3 mx-auto mb-3 cursor-pointer rounded-2 shadow fw-semibold text-center"
                   type="button"
                 >
                   Add & Install Extension
@@ -375,7 +384,7 @@
               <div>
                 <!-- Boton de extension (Firefox) -->
                 <button
-                  class="button-part3 fs-6 w-100 py-3 px-3 mx-auto mb-3 cursor-pointer rounded-2 shadow fw-semibold text-white text-center"
+                  class="button-part3 fs-6 w-100 py-3 px-3 mx-auto mb-3 cursor-pointer rounded-2 shadow fw-semibold text-center"
                   type="button"
                 >
                   Add & Install Extension
@@ -403,7 +412,7 @@
               <div>
                 <!-- Boton de extension (Opera) -->
                 <button
-                  class="button-part3 fs-6 w-100 py-3 px-3 mx-auto mb-3 cursor-pointer rounded-2 shadow fw-semibold text-white text-center"
+                  class="button-part3 fs-6 w-100 py-3 px-3 mx-auto mb-3 cursor-pointer rounded-2 shadow fw-semibold text-center"
                   type="button"
                 >
                   Add & Install Extension
@@ -507,7 +516,7 @@
             </details>
           </div>
           <button
-            class="button-part4 w-25 my-3 py-2 cursor-pointer rounded-2 shadow fw-semibold text-white text-center"
+            class="button-part4 w-40 my-3 py-3 fs-7 cursor-pointer rounded-2 shadow fw-semibold text-center"
             type="button"
           >
             More info

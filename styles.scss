@@ -8,12 +8,10 @@ $salmongeneral: #fdaf90;
 h1,
 h2,
 h3 {
-  font-family: $fonttype;
   letter-spacing: 0.1vw;
 }
 
 p {
-  font-family: $fonttype;
   letter-spacing: 0.15vw;
 }
 
@@ -24,24 +22,68 @@ p {
 .button-contact {
   background-color: $bluegeneral;
   border: solid $bluegeneral;
+  color: white;
 
+  &:active,
+  &:hover {
+    background-color: white;
+    color: $bluegeneral;
+  }
+}
+
+.button-firefoxp1 {
+  background-color: solid rgb(132, 132, 132);
+  border: solid #f0f0f0;
+
+  &:active,
+  &:hover {
+    background-color: white;
+    border: solid white;
+  }
+}
+
+/* General uses */
+.backgroundBlue {
+  background-color: $bluegeneral;
+}
+
+.translateYDown {
+  transform: translateY(25%);
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-65 {
+  width: 65%;
+}
+
+.end-35 {
+  right: 35%;
+}
+
+.top-40 {
+  top: 40%;
+}
+
+.fs-7 {
+  font-size: 0.75rem;
+}
+
+/* Body */
+body {
   font-family: $fonttype;
-  font-size: 3.5vw;
 }
 
 /* Header styles 
     This is the header of the page, which contains the logo and navigation menu. */
 header {
-  .img-hamburger {
-    height: 65%;
-  }
-
   /* Header dropdown*/
   .dropdown-menu-custom {
     display: none;
     inset: 0;
     background: rgba(37, 48, 68, 0.85);
-    z-index: 2;
 
     &.active {
       display: flex;
@@ -50,19 +92,13 @@ header {
     .img-logo-dropdown {
       top: clamp(35.2px, 11vw, 45.1px);
       left: 10vw;
-      width: 40vw;
       min-width: 128px;
       max-width: 164px;
-      height: 7vw;
-      min-height: 22.4px;
-      max-height: 28px;
     }
 
     .dropdown-close {
       top: clamp(38.4px, 12vw, 49.2px);
       right: 10vw;
-      background: none;
-      cursor: pointer;
 
       &:hover,
       &:active {
@@ -71,50 +107,11 @@ header {
       }
     }
 
-    .img-cross {
-      width: 5vw;
-      min-width: 16px;
-      max-width: 20.5px;
-      height: 5vw;
-      min-height: 16px;
-      max-height: 20.5px;
-    }
-
-    .div-buttons-header {
-      width: 80%;
-      margin-top: 40px;
-    }
-
     .button-header-og {
-      flex-direction: column;
-      justify-content: center;
-      width: 100%;
-      height: 4em;
-      max-height: 70.4px;
-      background-color: transparent;
-      border: none;
-      border-bottom: solid 0.5px white;
-      cursor: pointer;
-
-      font-family: $fonttype;
-      font-size: clamp(17.6px, 5.5vw, 22.55px);
-      font-weight: 500;
       letter-spacing: 0.75vw;
+
+      background-color: transparent;
       color: white;
-      text-align: center;
-
-      &:first-child {
-        border-top: solid 0.5px white;
-        margin-top: 3rem;
-      }
-
-      &:last-child {
-        height: 3em;
-        border: solid 3px white;
-        border-radius: 5%;
-        margin-top: 5%;
-        font-weight: 550;
-      }
 
       &:hover,
       &:active {
@@ -129,137 +126,22 @@ header {
       }
     }
 
-    .ul-sociallinks-header {
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      gap: 12vw;
-      margin-bottom: clamp(32px, 10%, 41px);
-
-      .img-sociallinks-header {
-        width: 7.5vw;
-        max-width: 30.75px;
-        height: 7vw;
-        max-height: 28.7px;
-
-        &:hover,
-        &:active {
-          filter: invert(62%) sepia(77%) saturate(749%) hue-rotate(-14deg)
-            brightness(101%) contrast(101%);
-        }
-      }
+    .img-sociallinks-header:hover,
+    .img-sociallinks-header:active {
+      filter: invert(62%) sepia(77%) saturate(749%) hue-rotate(-14deg)
+        brightness(101%) contrast(101%);
     }
   }
 }
 
-/* Parte 1 styles
-    This is the first part of the page which contains the illustration and the "Bookmark Manager" text. */
-.section-part1 {
-  flex-wrap: wrap;
-}
-
-.div-illustration {
-  margin-bottom: 10%;
-}
-
-.img-illustration {
-  width: 95vw;
-}
-
-.figure {
-  background-color: $bluegeneral;
-  width: 70vw;
-  height: 75%;
-  left: 30%;
-  top: 30%;
-  border-bottom-left-radius: 30%;
-  z-index: -1;
-}
-
-.div-button-part1 {
-  width: 85%;
-  margin: 10% auto 25% auto;
-}
-
-.button-chromep1:active,
-.button-chromep1:hover {
-  background-color: white;
-  color: $bluegeneral;
-}
-
-.button-firefoxp1 {
-  width: 42.5%;
-  height: 12.5vw;
-  background-color: #f7f7f7;
-  border: solid #f7f7f7;
-  cursor: pointer;
-
-  border-radius: 5px;
-  box-shadow: 0 1px 5px rgb(220, 220, 220);
-
-  font-family: $fonttype;
-  font-weight: 550;
-  font-size: 3.5vw;
-  color: rgb(132, 132, 132);
-  text-align: center;
-}
-
-.button-firefoxp1:active,
-.button-firefoxp1:hover {
-  background-color: white;
-  border: solid rgb(132, 132, 132);
-  color: rgb(132, 132, 132);
-}
-
 /* Parte 2 styles
     This is the second part which contains the part of "features". */
-.section-part2 {
-  margin-bottom: 25%;
-}
-
-.section-part2 .div-illustration {
-  margin-top: 20%;
-  margin-bottom: 15%;
-}
-
 .tab-content {
   display: none;
 }
 
-.img-illustration2 {
-  width: 80%;
-}
-
-.section-part2 .figure {
-  height: 100%;
-  width: 77.5%;
-  left: 0%;
-  right: 30%;
-  top: 17.5%;
-  border-bottom-right-radius: 30%;
-  border-top-right-radius: 30%;
-  border-bottom-left-radius: 0%;
-}
-
-.div-buttons {
-  width: 80%;
-  margin-top: 10%;
-}
-
 .button-part2 {
-  height: 4em;
-  border: none;
-  border-bottom: solid 1px rgb(192, 192, 192);
-  cursor: pointer;
-
-  font-family: $fonttype;
-  font-size: 4.25vw;
-  font-weight: 550;
   color: rgb(132, 132, 132);
-}
-
-.button-part2:first-child {
-  border-top: solid 0.5px rgb(192, 192, 192);
 }
 
 .button-part2:hover {
@@ -288,10 +170,6 @@ header {
 
 /* Parte 3 styles
     This is the third part which contains a link to download the extension. (Not included in the final project) */
-.section-part3 {
-  margin-bottom: 35%;
-}
-
 .contenedor-extension {
   max-width: 500px;
   height: 100%;
@@ -329,9 +207,7 @@ details > summary {
 
 .summary-part4 {
   box-sizing: border-box;
-  font-family: $fonttype;
   font-weight: 550;
-  font-size: 3.75vw;
   color: rgb(62, 62, 62);
   letter-spacing: 0.1vw;
 }
@@ -358,7 +234,6 @@ details > summary {
 }
 
 .p-part4 {
-  font-family: $fonttype;
   letter-spacing: 0.1vw;
   line-height: 7vw;
 }
@@ -377,7 +252,6 @@ details > summary {
 }
 
 .input-email-footer {
-  font-family: $fonttype;
 }
 
 .input-email-footer.error {
@@ -399,7 +273,6 @@ details > summary {
   border-bottom-left-radius: 7.5px;
   border-bottom-right-radius: 7.5px;
 
-  font-family: $fonttype;
   letter-spacing: 0.1vw;
 }
 
@@ -424,9 +297,7 @@ details > summary {
 .button-footer {
   width: fit-content;
 
-  font-family: $fonttype;
   font-weight: 500;
-  font-size: 3.75vw;
   letter-spacing: 0.5vw;
 }
 
