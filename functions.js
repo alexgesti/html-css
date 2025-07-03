@@ -1,14 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Open just one tab by default
   const tabcontent = document.getElementsByClassName("tab-content");
-  const buttons = document.getElementsByClassName("button-part2");
-  if (tabcontent.length > 0) {
-    if (window.matchMedia("(min-width: 1024px)").matches)
-      tabcontent[0].style.display = "flex";
-    else tabcontent[0].style.display = "block";
+  const buttons = document.getElementsByClassName("button-tab");
+
+  // Oculta todos los tabs
+  for (let i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].classList.remove("d-flex");
+    tabcontent[i].classList.add("d-none");
   }
+
+  for (let i = 0; i < buttons.length; i++)
+    buttons[i].classList.remove("active");
+
+  // Muestra solo el primer tab
+  if (tabcontent.length > 0) {
+    tabcontent[0].classList.remove("d-none");
+    tabcontent[0].classList.add("d-flex");
+  }
+
   if (buttons.length > 0) {
-    buttons[0].className += " active";
+    buttons[0].classList.add("active");
   }
 
   // Handles the email validation for the contact form
@@ -20,13 +31,17 @@ document.addEventListener("DOMContentLoaded", function () {
   emailInput.addEventListener("input", function () {
     const email = emailInput.value;
     if (email.includes("@") && email.includes(".")) {
-      emailError.style.display = "none";
-      emailErrorImg.style.display = "none";
-      emailInput.classList.remove("error");
+      emailError.classList.remove("d-flex");
+      emailError.classList.add("d-none");
+      emailErrorImg.classList.remove("d-flex");
+      emailErrorImg.classList.add("d-none");
+      emailInput.classList.remove("border", "border-5", "border-danger");
     } else {
-      emailError.style.display = "flex";
-      emailErrorImg.style.display = "inline";
-      emailInput.classList.add("error");
+      emailError.classList.remove("d-none");
+      emailError.classList.add("d-flex");
+      emailErrorImg.classList.remove("d-none");
+      emailErrorImg.classList.add("d-flex");
+      emailInput.classList.add("border", "border-5", "border-danger");
       e.preventDefault();
     }
   });
@@ -50,36 +65,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Tabs fuction.
 function openTag(event, tagName) {
-  let tabcontent, tablinks;
-
-  tabcontent = document.getElementsByClassName("tab-content");
-  buttons = document.getElementsByClassName("button-part2");
+  const tabcontent = document.getElementsByClassName("tab-content");
+  const buttons = document.getElementsByClassName("button-tab");
 
   for (let i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none"; // Hide all tab content
+    tabcontent[i].classList.remove("d-flex");
+    tabcontent[i].classList.add("d-none");
   }
 
   for (let i = 0; i < buttons.length; i++) {
-    buttons[i].className = buttons[i].className.replace(" active", ""); // Remove active class from all tabs
+    buttons[i].classList.remove("active");
   }
 
+  event.currentTarget.classList.add("active");
+
   const tab = document.getElementById(tagName);
-
-  tab.style.display = "flex"; // Show the selected tab content
+  tab.classList.remove("d-none");
+  tab.classList.add("d-flex");
   setTabDirection(tab);
-
   currentTab = tab;
-
-  event.currentTarget.className += " active"; // Add active class to the clicked tab
-}
-
-window.addEventListener("resize", function resizeHandler() {
-  setTabDirection(currentTab);
-});
-
-function setTabDirection(tab) {
-  if (!tab) return;
-  if (window.matchMedia("(min-width: 1024px)").matches)
-    tab.style.flexDirection = "row";
-  else tab.style.flexDirection = "column";
 }

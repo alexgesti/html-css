@@ -12,37 +12,74 @@ p {
 }
 
 /* Botones base */
-.button-chromep1,
-.button-part3,
-.button-part4,
-.button-contact {
+.button-blue {
   background-color: #4d61d1;
   border: solid #4d61d1;
   color: white;
 }
-.button-chromep1:active, .button-chromep1:hover,
-.button-part3:active,
-.button-part3:hover,
-.button-part4:active,
-.button-part4:hover,
-.button-contact:active,
-.button-contact:hover {
+.button-blue:active, .button-blue:hover {
   background-color: white;
   color: #4d61d1;
 }
+.button-blue#more-info-button {
+  display: none;
+}
 
-.button-firefoxp1 {
+.button-grey {
   background-color: solid rgb(132, 132, 132);
   border: solid #f0f0f0;
 }
-.button-firefoxp1:active, .button-firefoxp1:hover {
+.button-grey:active, .button-grey:hover {
   background-color: white;
   border: solid white;
+}
+
+.button-salmon {
+  background-color: rgb(255, 101, 83);
+  border: solid rgb(255, 101, 83);
+  color: white;
+  letter-spacing: 0.25vw;
+}
+.button-salmon:active, .button-salmon:hover {
+  background-color: white;
+  color: rgb(255, 101, 83);
+}
+
+.button-tab {
+  color: rgb(132, 132, 132);
+  position: relative;
+}
+.button-tab.active, .button-tab:hover {
+  color: #fdaf90;
+  background-color: transparent;
+}
+.button-tab.active::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 4px;
+  background: #fdaf90;
+  pointer-events: none;
+}
+
+.button-footer {
+  color: white;
+}
+.button-footer:active, .button-footer:hover {
+  color: #fdaf90;
+  outline: none;
 }
 
 /* General uses */
 .backgroundBlue {
   background-color: #4d61d1;
+}
+
+.backgroundDarkBlue {
+  background-color: rgb(39, 39, 76);
 }
 
 .translateYDown {
@@ -55,6 +92,10 @@ p {
 
 .w-65 {
   width: 65%;
+}
+
+.w-85 {
+  width: 85%;
 }
 
 .end-35 {
@@ -74,7 +115,19 @@ body {
   font-family: "crique grotesque", sans-serif;
 }
 
-/* Header styles 
+/* Images */
+.img-error-footer {
+  top: 25%;
+  transform: translateY(-25%);
+  right: 3.5%;
+}
+
+.ul-sociallinks a:hover .img-sociallinks,
+.ul-sociallinks a:active .img-sociallinks {
+  filter: invert(70%) sepia(60%) saturate(1200%) hue-rotate(-10deg) brightness(160%) contrast(85%);
+}
+
+/* Header styles NECESITA LIMPIEZA
     This is the header of the page, which contains the logo and navigation menu. */
 header {
   /* Header dropdown*/
@@ -113,67 +166,12 @@ header .dropdown-menu-custom .button-header-og:last-child:hover, header .dropdow
   background-color: white;
   color: #242841;
 }
-header .dropdown-menu-custom .img-sociallinks-header:hover,
-header .dropdown-menu-custom .img-sociallinks-header:active {
+header .dropdown-menu-custom .img-sociallinks-header:hover, header .dropdown-menu-custom .img-sociallinks-header:active {
   filter: invert(62%) sepia(77%) saturate(749%) hue-rotate(-14deg) brightness(101%) contrast(101%);
 }
 
-/* Parte 2 styles
-    This is the second part which contains the part of "features". */
-.tab-content {
-  display: none;
-}
-
-.button-part2 {
-  color: rgb(132, 132, 132);
-}
-
-.button-part2:hover {
-  color: #fdaf90;
-}
-
-.button-part2.active {
-  position: relative;
-  color: #fdaf90;
-  background-color: transparent;
-}
-
-.button-part2.active::after {
-  content: "";
-  position: absolute;
-  left: 27.5%;
-  right: 27.5%;
-  bottom: 0;
-  height: 4px;
-  background: #fdaf90;
-}
-
-.tab-content .button-chromep1 {
-  display: none;
-}
-
-/* Parte 3 styles
-    This is the third part which contains a link to download the extension. (Not included in the final project) */
-.contenedor-extension {
-  max-width: 500px;
-  height: 100%;
-  border-radius: 5%;
-  box-shadow: 0 10px 20px rgb(220, 220, 220);
-}
-
-.button-part3:active,
-.button-part3:hover {
-  background-color: white;
-  color: #4d61d1;
-}
-
-/* Parte 4 styles
+/* Parte 4 styles NECESITA LIMPIEZA
     This is the forth part which contains FAQs about the app. */
-.div-p4 {
-  box-sizing: border-box;
-  padding: 0 7.5%;
-}
-
 details summary::-webkit-details-marker,
 details summary::marker {
   display: none;
@@ -181,18 +179,6 @@ details summary::marker {
 
 details > summary {
   list-style: none;
-}
-
-.details-part4 {
-  box-sizing: border-box;
-  border-bottom: solid 1px rgb(192, 192, 192);
-}
-
-.summary-part4 {
-  box-sizing: border-box;
-  font-weight: 550;
-  color: rgb(62, 62, 62);
-  letter-spacing: 0.1vw;
 }
 
 .summary-part4::after {
@@ -213,406 +199,4 @@ details > summary {
   /* Cambia el color de la flecha al abrir */
   transform: rotate(180deg);
   filter: invert(27%) sepia(99%) saturate(2050%) hue-rotate(-15deg) brightness(92.5%) contrast(90%);
-}
-
-.p-part4 {
-  letter-spacing: 0.1vw;
-  line-height: 7vw;
-}
-
-.button-part4:active,
-.button-part4:hover {
-  background-color: white;
-  color: #4d61d1;
-}
-
-/* Footer styles 
-    This is the footer/end of the page, where you can send your email adress to stay in contact, go quickly to one of the sections of the page or visit one of the social webs of the company. */
-.section-contact {
-  /* Contact section */
-  background-color: #4d61d1;
-}
-
-.input-email-footer.error {
-  border: 5px solid rgb(255, 101, 83);
-  border-bottom-left-radius: 0%;
-  border-bottom-right-radius: 0%;
-}
-
-.img-error-footer {
-  display: none;
-  top: 25%;
-  transform: translateY(-25%);
-  right: 3.5%;
-}
-
-.email-error {
-  display: none;
-  background-color: rgb(255, 101, 83);
-  border-bottom-left-radius: 7.5px;
-  border-bottom-right-radius: 7.5px;
-  letter-spacing: 0.1vw;
-}
-
-.button-contact {
-  background-color: rgb(255, 101, 83);
-  border: solid rgb(255, 101, 83);
-  letter-spacing: 0.25vw;
-}
-
-.button-contact:active,
-.button-contact:hover {
-  background-color: white;
-  color: rgb(255, 101, 83);
-}
-
-.section-links {
-  /* Links section */
-  background-color: rgb(39, 39, 76);
-}
-
-.button-footer {
-  width: -moz-fit-content;
-  width: fit-content;
-  font-weight: 500;
-  letter-spacing: 0.5vw;
-}
-
-.button-footer:active,
-.button-footer:hover {
-  color: #fdaf90;
-  outline: none;
-}
-
-.ul-sociallinks a:active .img-sociallinks,
-.ul-sociallinks a:hover .img-sociallinks {
-  filter: invert(70%) sepia(60%) saturate(1200%) hue-rotate(-10deg) brightness(160%) contrast(85%);
-}
-
-@media (min-width: 1024px) {
-  /* Web format */
-  /* Header */
-  header {
-    margin-top: 3.5% !important;
-    margin-bottom: 10% !important;
-    justify-content: center !important;
-    align-items: center !important;
-  }
-  .img-logo {
-    width: 30% !important;
-    height: 30% !important;
-    margin: 0 3.5% !important;
-  }
-  .button-header,
-  .img-logo-dropdown,
-  .img-cross,
-  .ul-sociallinks-header {
-    display: none !important;
-  }
-  .dropdown-menu-custom {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: flex-end !important;
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    right: auto !important;
-    bottom: auto !important;
-    width: 100% !important;
-    height: auto !important;
-    margin: 0 3.5% !important;
-    background: none !important;
-    color: inherit !important;
-    z-index: 0 !important;
-    box-shadow: none !important;
-    border-radius: 0 !important;
-    padding: 0 !important;
-  }
-  .div-buttons-header {
-    flex-direction: row !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    width: auto !important;
-    margin-top: auto !important;
-    gap: 2vw !important;
-    margin-right: 10% !important;
-  }
-  .button-header-og {
-    flex-direction: row !important;
-    height: auto !important;
-    max-height: auto !important;
-    border: none !important;
-    margin: 0 !important;
-    margin-top: 0 !important;
-    padding: 2.5% !important;
-    font-size: 1.5vw !important;
-    letter-spacing: 0.1vw !important;
-    color: rgb(28, 28, 28) !important;
-  }
-  .button-header-og:last-child {
-    height: auto !important;
-    border: solid 3px rgb(255, 101, 83) !important;
-    border-radius: 10% !important;
-    background-color: rgb(255, 101, 83) !important;
-    color: white !important;
-    margin-top: 0 !important;
-  }
-  .button-header-og:active,
-  .button-header-og:hover {
-    color: #fdaf90 !important;
-  }
-  .button-header-og:last-child:active,
-  .button-header-og:last-child:hover {
-    background-color: white !important;
-    color: #fdaf90 !important;
-  }
-  /* Parte 1 sytles (Desktop) */
-  .section-part1 {
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-    width: 100%;
-    margin-bottom: 7.5%;
-  }
-  .div-illustration {
-    margin-bottom: auto;
-    width: 100%;
-  }
-  .img-illustration {
-    width: 42.5vw;
-  }
-  .figure {
-    width: 35vw;
-    right: 0;
-    left: auto;
-  }
-  .div-text-part1 h1 {
-    font-size: 3.75vw;
-    line-height: 5vw;
-    margin: 0% 0%;
-    margin-bottom: 5%;
-    text-align: left;
-    padding-left: 12.5%;
-  }
-  .div-button-part1 {
-    justify-content: left;
-    margin: auto;
-    padding-left: 10%;
-    gap: 2vw;
-  }
-  .button-chromep1,
-  .button-firefoxp1 {
-    width: 35%;
-    font-size: 1.5vw;
-  }
-  /* Part 2 sytles (Windows) */
-  .section-part2 {
-    margin-bottom: 7.5%;
-  }
-  .section-part2 h2 {
-    font-size: 2.75vw;
-    line-height: 0;
-    margin: 0;
-    margin-bottom: 3.5%;
-    text-align: center;
-  }
-  .div-buttons {
-    flex-direction: row;
-    width: 100%;
-    margin-top: 5%;
-  }
-  .button-part2 {
-    width: 25%;
-    height: 5em;
-    font-size: 1.5vw;
-  }
-  .button-part2:first-child {
-    border-top: none;
-  }
-  .button-part2.active::after {
-    left: 0;
-    right: 0;
-  }
-  .tab-content {
-    flex-direction: row;
-    align-items: center;
-    height: 30vw;
-    margin-top: 2.5%;
-    margin-bottom: 5%;
-  }
-  .tab-content h2 {
-    font-size: 2.75vw;
-    line-height: 0;
-    margin: 0;
-    margin-bottom: 5.5%;
-    text-align: left;
-  }
-  .section-part2 .div-illustration {
-    display: flex;
-    flex-direction: row;
-  }
-  .img-illustration2 {
-    width: 70%;
-  }
-  .section-part2 .figure {
-    width: 70%;
-  }
-  .tab-content .button-chromep1 {
-    display: flex;
-    width: 20%;
-    height: 3.5vw;
-    margin-top: 2.5%;
-  }
-  /* Part 3 sytles (Windows) */
-  .section-part3 {
-    margin-bottom: 7.5%;
-  }
-  .section-part3 h2 {
-    font-size: 2.75vw;
-    line-height: 0;
-    margin: 0;
-    margin-bottom: 3.5%;
-    text-align: center;
-  }
-  .div-contenedor-extension {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 5%;
-  }
-  .contenedor-extension {
-    width: 22.5vw;
-    margin-top: 5%;
-  }
-  .contenedor-extension:nth-child(2) {
-    margin-top: 10%;
-  }
-  .contenedor-extension:nth-child(3) {
-    margin-top: 15%;
-  }
-  .contenedor-extension h3 {
-    font-size: 1.75vw;
-    line-height: 2.5vw;
-  }
-  .button-part3 {
-    width: 15vw;
-    height: 4vw;
-    font-size: 1.15vw;
-  }
-  /* Part 4 sytles (Windows) */
-  .section-part4 {
-    margin-bottom: 7.5%;
-  }
-  .section-part4 h2 {
-    font-size: 2.75vw;
-    line-height: 0;
-    margin: 0;
-    margin-bottom: 4%;
-    text-align: center;
-  }
-  .details-part4 {
-    width: 60%;
-    font-size: 1.5vw;
-    margin: 2.5% auto;
-    padding-bottom: 2.5%;
-  }
-  .details-part4:first-child {
-    margin-top: 5%;
-    padding-top: 2.5%;
-    border-top: solid 1px rgb(192, 192, 192);
-  }
-  .summary-part4 {
-    font-size: 1.5vw;
-  }
-  .p-part4 {
-    font-size: 1.5vw;
-    line-height: 3vw;
-    margin: 0%;
-    margin-top: 5%;
-  }
-  .button-part4 {
-    width: 11vw;
-    height: 5vw;
-    font-size: 1.25vw;
-    margin-top: 3.5%;
-    margin-bottom: 3.5%;
-  }
-  /*Footer styles (Windows)*/
-  /* Contact section */
-  /*.section-contact {
-    width: 100%;
-  }*/
-  .h3-footer {
-    font-size: 1.5vw;
-    margin-top: 5%;
-  }
-  .h2-footer {
-    width: 50%;
-    font-size: 3.5vw;
-    line-height: 5vw;
-    margin-bottom: 2.5%;
-  }
-  .div-email-button {
-    display: flex;
-    flex-direction: row;
-    gap: 5%;
-    margin-bottom: 5%;
-  }
-  .div-email {
-    width: 40vw;
-    max-width: auto;
-  }
-  .input-email-footer {
-    height: 5vw;
-    font-size: clamp(10px, 1.5vw, 30px);
-  }
-  .img-error-footer {
-    height: 2.5vw;
-  }
-  .email-error {
-    font-size: 1rem;
-  }
-  .button-contact {
-    width: 10vw;
-    min-width: 200px;
-    max-width: auto;
-    height: 5vw;
-    max-height: auto;
-    font-size: clamp(20px, 1.75vw, 25px);
-    align-items: center;
-  }
-  /* Links section */
-  .section-links {
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .img-logofooter {
-    width: 15%;
-    margin: 0;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-  .div-button-footer {
-    flex-direction: row;
-    margin: 0;
-    gap: 2.5vw;
-  }
-  .button-footer {
-    font-size: 1vw;
-    letter-spacing: 0.5vw;
-    margin: 0;
-  }
-  .ul-sociallinks {
-    gap: 2vw;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: 5%;
-  }
-  .img-sociallinks {
-    width: 2.25vw;
-    height: 2.25vw;
-  }
 }/*# sourceMappingURL=styles.css.map */
