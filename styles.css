@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Root */
 /* General type of text*/
 h1,
@@ -127,6 +126,27 @@ body {
   filter: invert(70%) sepia(60%) saturate(1200%) hue-rotate(-10deg) brightness(160%) contrast(85%);
 }
 
+/* Detail */
+details summary::-webkit-details-marker,
+details summary::marker {
+  display: none;
+}
+
+details > summary {
+  list-style: none;
+}
+
+.icon-arrow {
+  transition: transform 0.3s, filter 0.3s;
+  transform-origin: 50% 50%;
+}
+
+.detail-arrow[open] .icon-arrow {
+  /* Cambia el color de la flecha al abrir */
+  transform: rotate(180deg);
+  filter: invert(27%) sepia(99%) saturate(2050%) hue-rotate(-15deg) brightness(92.5%) contrast(90%);
+}
+
 /* Header styles NECESITA LIMPIEZA
     This is the header of the page, which contains the logo and navigation menu. */
 header {
@@ -168,35 +188,4 @@ header .dropdown-menu-custom .button-header-og:last-child:hover, header .dropdow
 }
 header .dropdown-menu-custom .img-sociallinks-header:hover, header .dropdown-menu-custom .img-sociallinks-header:active {
   filter: invert(62%) sepia(77%) saturate(749%) hue-rotate(-14deg) brightness(101%) contrast(101%);
-}
-
-/* Parte 4 styles NECESITA LIMPIEZA
-    This is the forth part which contains FAQs about the app. */
-details summary::-webkit-details-marker,
-details summary::marker {
-  display: none;
-}
-
-details > summary {
-  list-style: none;
-}
-
-.summary-part4::after {
-  /* Flecha que indica si el FAQ está abierto o cerrado */
-  content: "";
-  display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  background-image: url("https://github.com/alexgesti/1.1-HTML-i-CSS-amb-Flex/blob/main/Imagenes/icon-arrow.svg?raw=true");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: transform 0.3s, filter 0.3s;
-  transform-origin: 50% 50%;
-}
-
-.details-part4[open] .summary-part4::after {
-  /* Cambia el color de la flecha al abrir */
-  transform: rotate(180deg);
-  filter: invert(27%) sepia(99%) saturate(2050%) hue-rotate(-15deg) brightness(92.5%) contrast(90%);
 }/*# sourceMappingURL=styles.css.map */
