@@ -148,15 +148,6 @@ body {
 }
 
 /* Detail */
-details summary::-webkit-details-marker,
-details summary::marker {
-  display: none;
-}
-
-details > summary {
-  list-style: none;
-}
-
 .icon-arrow {
   transition: transform 0.3s, filter 0.3s;
   transform-origin: 50% 50%;
@@ -169,18 +160,12 @@ details > summary {
     brightness(92.5%) contrast(90%);
 }
 
-/* Header styles NECESITA LIMPIEZA
-    This is the header of the page, which contains the logo and navigation menu. */
+/* Header */
 header {
   /* Header dropdown*/
   .dropdown-menu-custom {
-    display: none;
     inset: 0;
     background: rgba(37, 48, 68, 0.85);
-
-    &.active {
-      display: flex;
-    }
 
     .img-logo-dropdown {
       top: clamp(35.2px, 11vw, 45.1px);
@@ -199,7 +184,7 @@ header {
       }
     }
 
-    .button-header-og {
+    .button-dropdown {
       letter-spacing: 0.75vw;
 
       background-color: transparent;

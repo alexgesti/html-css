@@ -127,15 +127,6 @@ body {
 }
 
 /* Detail */
-details summary::-webkit-details-marker,
-details summary::marker {
-  display: none;
-}
-
-details > summary {
-  list-style: none;
-}
-
 .icon-arrow {
   transition: transform 0.3s, filter 0.3s;
   transform-origin: 50% 50%;
@@ -147,18 +138,13 @@ details > summary {
   filter: invert(27%) sepia(99%) saturate(2050%) hue-rotate(-15deg) brightness(92.5%) contrast(90%);
 }
 
-/* Header styles NECESITA LIMPIEZA
-    This is the header of the page, which contains the logo and navigation menu. */
+/* Header */
 header {
   /* Header dropdown*/
 }
 header .dropdown-menu-custom {
-  display: none;
   inset: 0;
   background: rgba(37, 48, 68, 0.85);
-}
-header .dropdown-menu-custom.active {
-  display: flex;
 }
 header .dropdown-menu-custom .img-logo-dropdown {
   top: clamp(35.2px, 11vw, 45.1px);
@@ -173,16 +159,16 @@ header .dropdown-menu-custom .dropdown-close {
 header .dropdown-menu-custom .dropdown-close:hover, header .dropdown-menu-custom .dropdown-close:active {
   filter: invert(62%) sepia(77%) saturate(749%) hue-rotate(-14deg) brightness(101%) contrast(101%);
 }
-header .dropdown-menu-custom .button-header-og {
+header .dropdown-menu-custom .button-dropdown {
   letter-spacing: 0.75vw;
   background-color: transparent;
   color: white;
 }
-header .dropdown-menu-custom .button-header-og:hover, header .dropdown-menu-custom .button-header-og:active {
+header .dropdown-menu-custom .button-dropdown:hover, header .dropdown-menu-custom .button-dropdown:active {
   background-color: rgba(255, 255, 255, 0.25);
   color: #242841;
 }
-header .dropdown-menu-custom .button-header-og:last-child:hover, header .dropdown-menu-custom .button-header-og:last-child:active {
+header .dropdown-menu-custom .button-dropdown:last-child:hover, header .dropdown-menu-custom .button-dropdown:last-child:active {
   background-color: white;
   color: #242841;
 }

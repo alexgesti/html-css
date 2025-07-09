@@ -53,14 +53,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (menuBtn && dropdown) {
     menuBtn.addEventListener("click", function () {
-      dropdown.classList.add("active");
+      dropdown.classList.add("d-flex");
+      dropdown.classList.remove("d-none");
     });
   }
   if (closeBtn && dropdown) {
     closeBtn.addEventListener("click", function () {
-      dropdown.classList.remove("active");
+      dropdown.classList.remove("d-flex");
+      dropdown.classList.add("d-none");
     });
   }
+
+  // Close the rest of the details when no active.
+  const detailsElements = document.querySelectorAll("details");
+
+  detailsElements.forEach((targetDetail) => {
+    targetDetail.addEventListener("toggle", () => {
+      if (targetDetail.open) {
+        detailsElements.forEach((detail) => {
+          if (detail !== targetDetail) {
+            detail.open = false;
+          }
+        });
+      }
+    });
+  });
 });
 
 // Tabs fuction.
