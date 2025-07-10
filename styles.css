@@ -30,7 +30,7 @@ p {
 }
 .button-grey:active, .button-grey:hover {
   background-color: white;
-  border: solid white;
+  border: solid rgb(132, 132, 132);
 }
 
 .button-salmon {
