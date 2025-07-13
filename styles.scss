@@ -105,18 +105,6 @@ p {
   transform: translateY(25%);
 }
 
-.w-40 {
-  width: 40%;
-}
-
-.w-65 {
-  width: 65%;
-}
-
-.w-85 {
-  width: 85%;
-}
-
 .end-35 {
   right: 35%;
 }
@@ -127,6 +115,17 @@ p {
 
 .fs-7 {
   font-size: 0.75rem;
+}
+
+/* Position */
+.position-g-fixed {
+  position: fixed;
+}
+
+@media (min-width: 992px) {
+  .position-lg-static {
+    position: static;
+  }
 }
 
 /* Body */
@@ -209,5 +208,8 @@ header {
         filter: $header-hover-filter;
       }
     }
+
+    @media (min-width: 992px) {
+    } /*(Actualizar para que sea custom)*/
   }
 }

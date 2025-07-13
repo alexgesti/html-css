@@ -85,18 +85,6 @@ p {
   transform: translateY(25%);
 }
 
-.w-40 {
-  width: 40%;
-}
-
-.w-65 {
-  width: 65%;
-}
-
-.w-85 {
-  width: 85%;
-}
-
 .end-35 {
   right: 35%;
 }
@@ -109,6 +97,16 @@ p {
   font-size: 0.75rem;
 }
 
+/* Position */
+.position-g-fixed {
+  position: fixed;
+}
+
+@media (min-width: 992px) {
+  .position-lg-static {
+    position: static;
+  }
+}
 /* Body */
 body {
   font-family: "crique grotesque", sans-serif;
@@ -145,6 +143,7 @@ header {
 header .dropdown-menu-custom {
   inset: 0;
   background: rgba(37, 48, 68, 0.85);
+  /*(Actualizar para que sea custom)*/
 }
 header .dropdown-menu-custom .img-logo-dropdown {
   top: clamp(35.2px, 11vw, 45.1px);
