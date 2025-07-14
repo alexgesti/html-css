@@ -6,11 +6,11 @@ Este proyecto consiste en la creación de un layout utilizando HTML, CSS, Bootst
 
 - Mobile:
 
-![S_1](https://github.com/alexgesti/1.1-html-i-css-amb-flex/blob/bootstrap-and-sass/Screenshots/Phone_1.PNG)
-
-![S_2](https://github.com/alexgesti/1.1-html-i-css-amb-flex/blob/bootstrap-and-sass/Screenshots/Phone_2.PNG)
-
-![S_3](https://github.com/alexgesti/1.1-html-i-css-amb-flex/blob/bootstrap-and-sass/Screenshots/Phone_3.PNG)
+<pre> ```html <p align="center">
+  <img src="https://github.com/alexgesti/1.1-html-i-css-amb-flex/blob/bootstrap-and-sass/Screenshots/Phone_1.PNG" width="150" alt="Captura 1" />
+  <img src="https://github.com/alexgesti/1.1-html-i-css-amb-flex/blob/bootstrap-and-sass/Screenshots/Phone_2.PNG" width="150" alt="Captura 2" />
+  <img src="https://github.com/alexgesti/1.1-html-i-css-amb-flex/blob/bootstrap-and-sass/Screenshots/Phone_3.PNG" width="150" alt="Captura 2" />
+</p> ``` </pre>
 
 ---
 
