@@ -7,9 +7,9 @@ Este proyecto consiste en la creación de un layout utilizando HTML, CSS, Bootst
 - Mobile:
 
 <pre> <p align="center">
-      <img src="https://raw.githubusercontent.com/alexgesti/1.1-html-i-css-amb-flex/blob/bootstrap-and-sass/Screenshots/Phone_1.PNG" width="200" alt="Captura 1" />
-      <img src="https://raw.githubusercontent.com/alexgesti/1.1-html-i-css-amb-flex/blob/bootstrap-and-sass/Screenshots/Phone_2.PNG" width="200" alt="Captura 2" />
-      <img src="https://raw.githubusercontent.com/alexgesti/1.1-html-i-css-amb-flex/blob/bootstrap-and-sass/Screenshots/Phone_3.PNG" width="200" alt="Captura 3" />
+      <img src="https://raw.githubusercontent.com/alexgesti/1.1-html-i-css-amb-flex/refs/heads/bootstrap-and-sass/Screenshots/Phone_1.PNG" width="200" alt="Captura 1" />
+      <img src="https://raw.githubusercontent.com/alexgesti/1.1-html-i-css-amb-flex/refs/heads/bootstrap-and-sass/Screenshots/Phone_2.PNG" width="200" alt="Captura 2" />
+      <img src="https://raw.githubusercontent.com/alexgesti/1.1-html-i-css-amb-flex/refs/heads/bootstrap-and-sass/Screenshots/Phone_3.PNG" width="200" alt="Captura 3" />
 </p> </pre>
 
 ---
