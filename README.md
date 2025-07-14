@@ -4,14 +4,6 @@
 
 Este proyecto consiste en la creación de un layout utilizando HTML, CSS, Bootstrap y SASS que se adapte correctamente a distintos dispositivos, incluyendo escritorios, tabletas y móviles.
 
-- Mobile:
-
-<pre> <p align="center">
-      <img src="https://raw.githubusercontent.com/alexgesti/1.1-html-i-css-amb-flex/refs/heads/bootstrap-and-sass/Screenshots/Phone_1.PNG" width="200" alt="Captura 1" />
-      <img src="https://raw.githubusercontent.com/alexgesti/1.1-html-i-css-amb-flex/refs/heads/bootstrap-and-sass/Screenshots/Phone_2.PNG" width="200" alt="Captura 2" />
-      <img src="https://raw.githubusercontent.com/alexgesti/1.1-html-i-css-amb-flex/refs/heads/bootstrap-and-sass/Screenshots/Phone_3.PNG" width="200" alt="Captura 3" />
-</p> </pre>
-
 ---
 
 ## 💻 Tecnologías Utilitzadas
@@ -48,3 +40,13 @@ Para ejectuar este proyecto, se necesita:
 
 1. Abrir el archivo `index.html` en el navegador web.
 2. Si se utiliza Live Server, iniciarlo desde el editor de código para ver los cambios en tiempo real.
+
+## 📷 Galería
+
+- Mobile:
+
+<pre> <p align="center">
+      <img src="https://raw.githubusercontent.com/alexgesti/1.1-html-i-css-amb-flex/refs/heads/bootstrap-and-sass/Screenshots/Phone_1.PNG" width="250" alt="Captura 1" />
+      <img src="https://raw.githubusercontent.com/alexgesti/1.1-html-i-css-amb-flex/refs/heads/bootstrap-and-sass/Screenshots/Phone_2.PNG" width="250" alt="Captura 2" />
+      <img src="https://raw.githubusercontent.com/alexgesti/1.1-html-i-css-amb-flex/refs/heads/bootstrap-and-sass/Screenshots/Phone_3.PNG" width="250" alt="Captura 3" />
+</p> </pre>
