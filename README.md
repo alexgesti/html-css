@@ -4,6 +4,14 @@
 
 Este proyecto consiste en la creación de un layout utilizando HTML, CSS, Bootstrap y SASS que se adapte correctamente a distintos dispositivos, incluyendo escritorios, tabletas y móviles.
 
+- Mobile:
+
+![S_1](https://github.com/alexgesti/1.1-html-i-css-amb-flex/blob/bootstrap-and-sass/Screenshots/Phone_1.PNG)
+
+![S_2](https://github.com/alexgesti/1.1-html-i-css-amb-flex/blob/bootstrap-and-sass/Screenshots/Phone_2.PNG)
+
+![S_3](https://github.com/alexgesti/1.1-html-i-css-amb-flex/blob/bootstrap-and-sass/Screenshots/Phone_3.PNG)
+
 ---
 
 ## 💻 Tecnologías Utilitzadas
