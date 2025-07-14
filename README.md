@@ -2,7 +2,7 @@
 
 # 📄 Descripción - Enunciado del ejercicio
 
-Este proyecto consiste en la creación de un layout utilizando HTML y CSS que se adapte correctamente a distintos dispositivos, incluyendo escritorios, tabletas y móviles.
+Este proyecto consiste en la creación de un layout utilizando HTML, CSS, Bootstrap y SASS que se adapte correctamente a distintos dispositivos, incluyendo escritorios, tabletas y móviles.
 
 ---
 
@@ -11,6 +11,8 @@ Este proyecto consiste en la creación de un layout utilizando HTML y CSS que se
 - HTML5
 - CSS3
 - JavaScript
+- Bootstrap
+- SASS
 
 ---
 
